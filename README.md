@@ -12,7 +12,7 @@ Quick Start Guide:
 
 NOTE- The following work was done on Ubuntu version 14. Everything should be do/viewable on Windows or Mac.
 
-##To just get the binary and install and run it? Follow:
+###To just get the binary and install and run it? Follow:
 
 1- Grab the binary from the **_[fsl-community-bsp/build/tmp/deploy/images/README] (fsl-community-bsp/build/tmp/deploy/images/README)_** directory.
 
@@ -22,7 +22,7 @@ NOTE- The following work was done on Ubuntu version 14. Everything should be do/
    OR follow the guide at this step only:
    [Build succeeded! Where are my images?] (https://docs.google.com/document/d/1i4vmpC1eP7ieGzhzHUVDzFKItHBCKrkeYED7jU4djoY/edit#heading=h.akarravwqo52) step.
 
-##How to rebuild the image from source? Follow:
+###How to rebuild the image from source? Follow:
 
 1- Install the latest Yocto build tool, if not already.
    Make sure you can compile the latest board platform at:
@@ -48,7 +48,7 @@ NOTE- The following work was done on Ubuntu version 14. Everything should be do/
    
    So all you have to do is to jump to the [Compile Image] (https://docs.google.com/document/d/1Tb3JJ0qQ2kgIXkRkuj1rLBQJgZ9XEEX10lB3L8WphGo/edit#heading=h.fzksnu9t7jv6) step.
 
-##How to test if the image is working as expected? Follow:
+###How to test if the image is working as expected? Follow:
 
  1- do this.
     you should see?
@@ -61,6 +61,6 @@ NOTE- The following work was done on Ubuntu version 14. Everything should be do/
    
  If all the above passes, you have a working WVSNP node.
  See: [Steps for installing, running and testing the node.] (fsl-community-bsp/build/tmp/deploy/images/README) for details.   
-##Commiting Changes
+###Commiting Changes
 
 Follow the same procedures as you would for any files. If using Git Bash, check which files have been changed with "git status" or if using GUI, see which files are showing in the change window.
