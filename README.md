@@ -20,7 +20,7 @@ NOTE- The following work was done on Ubuntu version 14. Everything should be do/
    [Steps for installing, running and testing the node.] (fsl-community-bsp/build/tmp/deploy/images/README)
    
    OR follow the guide at this step only:
-   [Build succeeded! Where are my images?] (https://docs.google.com/document/d/1i4vmpC1eP7ieGzhzHUVDzFKItHBCKrkeYED7jU4djoY/edit#heading=h.akarravwqo52) step
+   [Build succeeded! Where are my images?] (https://docs.google.com/document/d/1i4vmpC1eP7ieGzhzHUVDzFKItHBCKrkeYED7jU4djoY/edit#heading=h.akarravwqo52) step.
 
 #How to rebuild the image from source? Follow:
 
