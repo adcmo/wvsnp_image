@@ -14,7 +14,7 @@ NOTE- The following work was done on Ubuntu version 14. Everything should be do/
 
 #To just get the binary and install and run it? Follow:
 
-1- Grab the binary from the **_(fsl-community-bsp/build/tmp/deploy/images/README)_** directory.
+1- Grab the binary from the **_[fsl-community-bsp/build/tmp/deploy/images/README] (fsl-community-bsp/build/tmp/deploy/images/README)_** directory.
 
 2- Flash the SD card image binary as guided in the REAME document at: 
    [Steps for installing, running and testing the node.] (fsl-community-bsp/build/tmp/deploy/images/README)
