@@ -14,7 +14,7 @@ NOTE- The following work was done on Ubuntu version 14. Everything should be do/
 
 #To just get the binary and install and run it? Follow:
 
-1- Grab the binary from the **_wvsnp_image/output/install directory_**.
+1- Grab the binary from the **_wvsnp_image/output/install_** directory.
 
 2- Flash the SD card image binary as guided in the REAME document at: 
    [Steps for installing, running and testing the node.] (wvsnp_image/output/install/README)
@@ -33,7 +33,7 @@ NOTE- The following work was done on Ubuntu version 14. Everything should be do/
    (https://docs.google.com/document/d/1i4vmpC1eP7ieGzhzHUVDzFKItHBCKrkeYED7jU4djoY/edit?usp=sharing)
 
    And that you are able to build/compile the platform above.
-   i.e. Able to complete step: "10. Start to build."
+   i.e. Able to complete step: [10. Start to build.] (https://docs.google.com/document/d/1i4vmpC1eP7ieGzhzHUVDzFKItHBCKrkeYED7jU4djoY/edit#heading=h.bqs82a4zvtdw)
    
 2- Get a copy of the repository: - Using Command Prompt (Git Bash) git clone https://github.com/adcmo/wvsnp_image.git
 
