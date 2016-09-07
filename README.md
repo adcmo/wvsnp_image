@@ -14,7 +14,7 @@ NOTE- The following work was done on Ubuntu version 14. Everything should be do/
 
 #To just get the binary and install and run it? Follow:
 
-1- Grab the binary from the _wvsnp_image/output/install directory_**.
+1- Grab the binary from the **_wvsnp_image/output/install directory_**.
 
 2- Flash the SD card image binary as guided in the REAME document at: 
    [Steps for installing, running and testing the node.] (wvsnp_image/output/install/README)
@@ -40,7 +40,7 @@ NOTE- The following work was done on Ubuntu version 14. Everything should be do/
    Using the GitHub page While logged in to GitHub, there are URLs available in the sidebar: 
    HTTPS clone URL - Using GitHub's GUI to clone repo. Clone or download this repository.
 
-3- Change to the _wvsnp_image_** directory.
+3- Change to the **_wvsnp_image_** directory.
 
    At this point we assume everything has been taken care of in preparing the image
    as described in the document: [Creating a WVSNP Minimum Core Image for Wandboard (iMX6).]
