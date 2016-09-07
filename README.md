@@ -60,7 +60,7 @@ NOTE- The following work was done on Ubuntu version 14. Everything should be do/
     you should see?
    
  If all the above passes, you have a working WVSNP node.
-   
+ See: [Steps for installing, running and testing the node.] (fsl-community-bsp/build/tmp/deploy/images/README) for details.   
 Commiting Changes
 
 Follow the same procedures as you would for any files. If using Git Bash, check which files have been changed with "git status" or if using GUI, see which files are showing in the change window.
