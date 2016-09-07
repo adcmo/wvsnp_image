@@ -17,7 +17,7 @@ NOTE- The following work was done on Ubuntu version 14. Everything should be do/
 1- Grab the binary from the **_wvsnp_image/fsl-community-bsp/build/tmp/deploy/images/README_** directory.
 
 2- Flash the SD card image binary as guided in the REAME document at: 
-   [Steps for installing, running and testing the node.] (wvsnp_image/fsl-community-bsp/build/tmp/deploy/images/README)
+   [Steps for installing, running and testing the node.] (fsl-community-bsp/build/tmp/deploy/images/README)
    
    OR follow the guide at this step only:
    [Build succeeded! Where are my images?.] (https://docs.google.com/document/d/1i4vmpC1eP7ieGzhzHUVDzFKItHBCKrkeYED7jU4djoY/edit#heading=h.akarravwqo52) step
