@@ -1,0 +1,121 @@
+path mismatch [2 links]: ino 20 db '/dev/shm/sem.mp27467-9366793814934868530' req '/dev/shm/7PDrYn'.
+path mismatch [2 links]: ino 96 db '/dev/shm/sem.mp27467-12940579431270484606' req '/dev/shm/HTBOaf'.
+path mismatch [2 links]: ino 100 db '/dev/shm/sem.mp27467-10647310448426754146' req '/dev/shm/Ygvdn6'.
+path mismatch [2 links]: ino 111 db '/dev/shm/sem.mp27467-6149987579875561800' req '/dev/shm/1KGDzX'.
+path mismatch [2 links]: ino 117 db '/dev/shm/sem.mp27467-14716991040642698395' req '/dev/shm/Gja5LO'.
+path mismatch [2 links]: ino 95 db '/dev/shm/sem.mp29445-840665039609431869' req '/dev/shm/uf1elu'.
+inode mismatch: '/home/carl/fsl-community-bsp/build/tmp/deploy/rpm/rpm.lock' ino 6732017 in db, 6732068 in request.
+creat ignored for existing file '/home/carl/fsl-community-bsp/build/tmp/deploy/rpm/rpm.lock'.
+inode mismatch: '/home/carl/fsl-community-bsp/build/tmp/deploy/rpm/rpm.lock' ino 6732017 in db, 6732068 in request.
+inode mismatch: '/home/carl/fsl-community-bsp/build/tmp/deploy/rpm/rpm.lock' ino 6732017 in db, 6732068 in request.
+inode mismatch: '/home/carl/fsl-community-bsp/build/tmp/deploy/rpm/rpm.lock' ino 6732017 in db, 6732068 in request.
+inode mismatch: '/home/carl/fsl-community-bsp/build/tmp/deploy/rpm/rpm.lock' ino 6732017 in db, 6732068 in request.
+path mismatch [2 links]: ino 96 db '/dev/shm/sem.mp29445-12299494621184016322' req '/dev/shm/e9SH7d'.
+path mismatch [2 links]: ino 97 db '/dev/shm/sem.mp29445-7164059325681435928' req '/dev/shm/FmScUX'.
+path mismatch [2 links]: ino 98 db '/dev/shm/sem.mp29445-7948939313559997891' req '/dev/shm/GKmJGH'.
+path mismatch [2 links]: ino 123 db '/dev/shm/sem.mp29445-14989509763934854185' req '/dev/shm/7Glhtr'.
+path mismatch [1 link]: ino 10494668 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/etc/sed3LzsDc'.
+path mismatch [1 link]: ino 10494668 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/etc/nsswitch.conf'.
+path mismatch [1 link]: ino 10494798 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/intercept_scripts/sedhARFJz'.
+path mismatch [1 link]: ino 10494798 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/intercept_scripts/update_font_cache'.
+path mismatch [1 link]: ino 10494798 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/intercept_scripts/update_font_cache'.
+path mismatch [1 link]: ino 10494798 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/intercept_scripts/update_font_cache'.
+path mismatch [1 link]: ino 10489432 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/intercept_scripts/sedJvvWwA'.
+path mismatch [1 link]: ino 10489432 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/intercept_scripts/update_font_cache'.
+path mismatch [1 link]: ino 10489432 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/intercept_scripts/update_font_cache'.
+path mismatch [1 link]: ino 10489432 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/intercept_scripts/update_font_cache'.
+path mismatch [1 link]: ino 10494798 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/intercept_scripts/sed4ggBsA'.
+path mismatch [1 link]: ino 10494798 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/intercept_scripts/update_font_cache'.
+path mismatch [1 link]: ino 10494798 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/intercept_scripts/update_font_cache'.
+path mismatch [1 link]: ino 10494798 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/intercept_scripts/update_font_cache'.
+path mismatch [1 link]: ino 10489432 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/intercept_scripts/sedmN6IGA'.
+path mismatch [1 link]: ino 10489432 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/intercept_scripts/update_font_cache'.
+path mismatch [1 link]: ino 10489432 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/intercept_scripts/update_font_cache'.
+path mismatch [1 link]: ino 10489432 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/intercept_scripts/update_font_cache'.
+path mismatch [1 link]: ino 10494798 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/intercept_scripts/sedq22aDA'.
+path mismatch [1 link]: ino 10494798 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/intercept_scripts/update_font_cache'.
+path mismatch [1 link]: ino 10494798 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/intercept_scripts/update_font_cache'.
+path mismatch [1 link]: ino 10494798 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/intercept_scripts/update_font_cache'.
+path mismatch [1 link]: ino 10489432 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/intercept_scripts/sedLVIzgA'.
+path mismatch [1 link]: ino 10489432 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/intercept_scripts/update_font_cache'.
+path mismatch [1 link]: ino 10494798 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/lib/libgstfft-1.0.so.0;57d9be07'.
+symlink err : 10494798 ['/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/lib/libgstfft-1.0.so.0;57d9be07'] (db 'NAMELESS FILE') db mode 0100775, header mode 0120777 (unlinking db)
+path mismatch [1 link]: ino 10494871 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/intercept_scripts/sedJzu87N'.
+path mismatch [1 link]: ino 10494871 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/intercept_scripts/update_pixbuf_cache'.
+path mismatch [1 link]: ino 10494871 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/intercept_scripts/update_pixbuf_cache'.
+path mismatch [1 link]: ino 10494871 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/intercept_scripts/update_pixbuf_cache'.
+path mismatch [1 link]: ino 10489433 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/intercept_scripts/sedRoGWlO'.
+path mismatch [1 link]: ino 10489433 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/intercept_scripts/update_pixbuf_cache'.
+path mismatch [1 link]: ino 10489433 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/intercept_scripts/update_pixbuf_cache'.
+path mismatch [1 link]: ino 10489433 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/intercept_scripts/update_pixbuf_cache'.
+path mismatch [1 link]: ino 10494871 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/intercept_scripts/sedr3KGhO'.
+path mismatch [1 link]: ino 10494871 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/intercept_scripts/update_pixbuf_cache'.
+path mismatch [1 link]: ino 10489433 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/oe_install/tmp/rpm-tmp.57145'.
+creat for '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/oe_install/tmp/rpm-tmp.57145' replaces existing 10489433 ['NAMELESS FILE'].
+path mismatch [1 link]: ino 10494871 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/intercept_scripts/update_pixbuf_cache'.
+path mismatch [1 link]: ino 10494871 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/intercept_scripts/update_pixbuf_cache'.
+path mismatch [1 link]: ino 10494871 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/intercept_scripts/update_pixbuf_cache'.
+path mismatch [1 link]: ino 10494871 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/intercept_scripts/update_pixbuf_cache'.
+path mismatch [1 link]: ino 10494871 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/intercept_scripts/update_pixbuf_cache'.
+path mismatch [1 link]: ino 10494871 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/intercept_scripts/update_pixbuf_cache'.
+path mismatch [1 link]: ino 10494870 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/intercept_scripts/sedGDgBZR'.
+path mismatch [1 link]: ino 10494870 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/intercept_scripts/update_pixbuf_cache'.
+path mismatch [1 link]: ino 10494870 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/intercept_scripts/update_pixbuf_cache'.
+path mismatch [1 link]: ino 10494870 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/intercept_scripts/update_pixbuf_cache'.
+path mismatch [1 link]: ino 10494870 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/intercept_scripts/update_pixbuf_cache'.
+path mismatch [1 link]: ino 10494870 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/intercept_scripts/update_pixbuf_cache'.
+path mismatch [1 link]: ino 10494870 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/intercept_scripts/update_pixbuf_cache'.
+path mismatch [1 link]: ino 10494870 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/intercept_scripts/update_pixbuf_cache'.
+path mismatch [1 link]: ino 10494871 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/intercept_scripts/sedDK8gIQ'.
+path mismatch [1 link]: ino 10494871 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/intercept_scripts/update_pixbuf_cache'.
+path mismatch [1 link]: ino 10494871 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/intercept_scripts/update_pixbuf_cache'.
+path mismatch [1 link]: ino 10494871 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/intercept_scripts/update_pixbuf_cache'.
+path mismatch [1 link]: ino 10494871 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/intercept_scripts/update_pixbuf_cache'.
+path mismatch [1 link]: ino 10494871 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/intercept_scripts/update_pixbuf_cache'.
+path mismatch [1 link]: ino 10494871 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/intercept_scripts/update_pixbuf_cache'.
+path mismatch [1 link]: ino 10494871 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/intercept_scripts/update_pixbuf_cache'.
+path mismatch [1 link]: ino 10494870 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/intercept_scripts/sedMSxLwT'.
+path mismatch [1 link]: ino 10494870 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/intercept_scripts/update_pixbuf_cache'.
+path mismatch [1 link]: ino 10494871 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/lib/python2.7/calendar.pyc;57d9be07'.
+creat for '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/lib/python2.7/calendar.pyc;57d9be07' replaces existing 10494871 ['NAMELESS FILE'].
+path mismatch [1 link]: ino 10618674 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/etc/pango/sedp8ugYo'.
+path mismatch [1 link]: ino 10618674 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/etc/pango/pango.modules'.
+path mismatch [1 link]: ino 10618758 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/lib/gdk-pixbuf-2.0/2.10.0/sedsCJtbi'.
+path mismatch [1 link]: ino 10618758 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/lib/gdk-pixbuf-2.0/2.10.0/loaders.cache'.
+path mismatch [1 link]: ino 10489425 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/etc/ssh/sedfO2V9E'.
+path mismatch [1 link]: ino 10489425 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/etc/ssh/sshd_config'.
+path mismatch [1 link]: ino 10489425 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/etc/ssh/sshd_config'.
+path mismatch [1 link]: ino 10489425 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/etc/ssh/sshd_config'.
+path mismatch [1 link]: ino 10489438 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/etc/ssh/sedEBzy4E'.
+path mismatch [1 link]: ino 10489438 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/etc/ssh/sshd_config'.
+path mismatch [1 link]: ino 10489425 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/etc/default/postinst'.
+creat for '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/etc/default/postinst' replaces existing 10489425 ['NAMELESS FILE'].
+path mismatch [1 link]: ino 10618758 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/lib/gdk-pixbuf-2.0/2.10.0/loaders.cache'.
+path mismatch [1 link]: ino 10618674 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/etc/pango/pango.modules'.
+path mismatch [1 link]: ino 10494668 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/etc/nsswitch.conf'.
+path mismatch [1 link]: ino 10489438 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/etc/ssh/sshd_config'.
+path mismatch [1 link]: ino 10618758 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/lib/gdk-pixbuf-2.0/2.10.0/loaders.cache'.
+path mismatch [1 link]: ino 10618674 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/etc/pango/pango.modules'.
+path mismatch [1 link]: ino 10494668 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/etc/nsswitch.conf'.
+path mismatch [1 link]: ino 10489438 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/etc/ssh/sshd_config'.
+path mismatch [2 links]: ino 24 db '/dev/shm/sem.mp29445-10755451291453316304' req '/dev/shm/ibC54X'.
+path mismatch [2 links]: ino 28 db '/dev/shm/sem.mp29445-9133307136183241343' req '/dev/shm/5O2WGu'.
+path mismatch [2 links]: ino 29 db '/dev/shm/sem.mp29445-3048540355354080327' req '/dev/shm/3KNQi1'.
+path mismatch [2 links]: ino 31 db '/dev/shm/sem.mp29445-13024367751233951059' req '/dev/shm/yubMUx'.
+path mismatch [1 link]: ino 10618758 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/lib/gdk-pixbuf-2.0/2.10.0/loaders.cache'.
+path mismatch [1 link]: ino 10618758 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/lib/gdk-pixbuf-2.0/2.10.0/loaders.cache'.
+path mismatch [1 link]: ino 10618674 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/etc/pango/pango.modules'.
+path mismatch [1 link]: ino 10618674 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/etc/pango/pango.modules'.
+path mismatch [1 link]: ino 10494668 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/etc/nsswitch.conf'.
+path mismatch [1 link]: ino 10494668 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/etc/nsswitch.conf'.
+path mismatch [1 link]: ino 10489438 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/etc/ssh/sshd_config'.
+path mismatch [1 link]: ino 10489438 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/etc/ssh/sshd_config'.
+path mismatch [2 links]: ino 21 db '/dev/shm/sem.mp29445-10542106347906220187' req '/dev/shm/ocZprp'.
+path mismatch [2 links]: ino 30 db '/dev/shm/sem.mp29445-16867200972401070924' req '/dev/shm/YPIiYg'.
+path mismatch [2 links]: ino 38 db '/dev/shm/sem.mp29445-11264992963556262856' req '/dev/shm/60Snv8'.
+path mismatch [2 links]: ino 49 db '/dev/shm/sem.mp29445-9170291545630408835' req '/dev/shm/pwBB2Z'.
+inode mismatch: '/home/carl/fsl-community-bsp/build/tmp/deploy/rpm/rpm.lock' ino 6732017 in db, 6732068 in request.
+path mismatch [1 link]: ino 10618758 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/lib/gdk-pixbuf-2.0/2.10.0/loaders.cache'.
+path mismatch [1 link]: ino 10618674 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/etc/pango/pango.modules'.
+path mismatch [1 link]: ino 10494668 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/etc/nsswitch.conf'.
+path mismatch [1 link]: ino 10489438 db 'NAMELESS FILE' req '/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/etc/ssh/sshd_config'.

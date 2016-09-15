@@ -1,0 +1,40 @@
+DEBUG: Executing python function rootfs_process_ignore
+DEBUG: Python function rootfs_process_ignore finished
+DEBUG: Executing python function rootfs_runtime_mapping
+DEBUG: Python function rootfs_runtime_mapping finished
+DEBUG: Executing python function do_rootfs
+NOTE: configuring RPM platform settings
+NOTE: configuring RPM system provides
+NOTE: configuring RPM DB settings
+NOTE: configuring Smart settings
+NOTE: Note: adding Smart channel wandboard (105)
+NOTE: Note: adding Smart channel cortexa9hf_vfp_neon_mx6qdl (100)
+NOTE: Note: adding Smart channel cortexa9hf_vfp_neon (95)
+NOTE: Note: adding Smart channel all (90)
+NOTE: adding Smart RPM DB channel
+NOTE: Note: configuring RPM cross-install scriptlet_wrapper
+NOTE: ###### Generate rootfs #######
+NOTE: Executing '/home/carl/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/bin/createrepo --dbpath /home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rpmdb/cortexa9hf_vfp_neon --update -q /home/carl/fsl-community-bsp/build/tmp/deploy/rpm/cortexa9hf_vfp_neon' ...
+NOTE: Executing '/home/carl/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/bin/createrepo --dbpath /home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rpmdb/all --update -q /home/carl/fsl-community-bsp/build/tmp/deploy/rpm/all' ...
+NOTE: Executing '/home/carl/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/bin/createrepo --dbpath /home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rpmdb/cortexa9hf_vfp_neon_mx6qdl --update -q /home/carl/fsl-community-bsp/build/tmp/deploy/rpm/cortexa9hf_vfp_neon_mx6qdl' ...
+NOTE: Executing '/home/carl/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/bin/createrepo --dbpath /home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rpmdb/wandboard --update -q /home/carl/fsl-community-bsp/build/tmp/deploy/rpm/wandboard' ...
+NOTE: Previous repo file missing: /home/carl/fsl-community-bsp/build/tmp/deploy/rpm/all/repodata/primary.xml.gz
+
+NOTE: Previous repo file missing: /home/carl/fsl-community-bsp/build/tmp/deploy/rpm/wandboard/repodata/primary.xml.gz
+
+NOTE: Previous repo file missing: /home/carl/fsl-community-bsp/build/tmp/deploy/rpm/cortexa9hf_vfp_neon_mx6qdl/repodata/primary.xml.gz
+
+NOTE: Previous repo file missing: /home/carl/fsl-community-bsp/build/tmp/deploy/rpm/cortexa9hf_vfp_neon/repodata/primary.xml.gz
+
+NOTE: Installing the following packages: packagegroup-fsl-tools-gpu run-postinsts nano packagegroup-fsl-tools-gpu-external btpkg screen wvsnp-startupscripts packagegroup-wandboard-ap-test vsftpd libxbee imx-test libx264-144 packagegroup-core-boot openssh packagegroup-fsl-gstreamer1.0 libmongoose packagegroup-fsl-gstreamer1.0-full packagegroup-base-extended packagegroup-core-tools-debug bash locale-base-en-us locale-base-en-gb
+NOTE: to be installed: packagegroup-fsl-tools-gpu@wandboard run-postinsts@all nano@cortexa9hf_vfp_neon packagegroup-fsl-tools-gpu-external@wandboard btpkg@cortexa9hf_vfp_neon screen@cortexa9hf_vfp_neon wvsnp-startupscripts@cortexa9hf_vfp_neon packagegroup-wandboard-ap-test@wandboard vsftpd@cortexa9hf_vfp_neon libxbee@cortexa9hf_vfp_neon imx-test@wandboard libx264-144@cortexa9hf_vfp_neon packagegroup-core-boot@wandboard openssh@cortexa9hf_vfp_neon packagegroup-fsl-gstreamer1.0@wandboard libmongoose@cortexa9hf_vfp_neon packagegroup-fsl-gstreamer1.0-full@all packagegroup-base-extended@wandboard packagegroup-core-tools-debug@all bash@cortexa9hf_vfp_neon locale-base-en-us@cortexa9hf_vfp_neon locale-base-en-gb@cortexa9hf_vfp_neon
+NOTE: /home/carl/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/bin/smart --log-level=warning --data-dir=/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/var/lib/smart install -y packagegroup-fsl-tools-gpu@wandboard run-postinsts@all nano@cortexa9hf_vfp_neon packagegroup-fsl-tools-gpu-external@wandboard btpkg@cortexa9hf_vfp_neon screen@cortexa9hf_vfp_neon wvsnp-startupscripts@cortexa9hf_vfp_neon packagegroup-wandboard-ap-test@wandboard vsftpd@cortexa9hf_vfp_neon libxbee@cortexa9hf_vfp_neon imx-test@wandboard libx264-144@cortexa9hf_vfp_neon packagegroup-core-boot@wandboard openssh@cortexa9hf_vfp_neon packagegroup-fsl-gstreamer1.0@wandboard libmongoose@cortexa9hf_vfp_neon packagegroup-fsl-gstreamer1.0-full@all packagegroup-base-extended@wandboard packagegroup-core-tools-debug@all bash@cortexa9hf_vfp_neon locale-base-en-us@cortexa9hf_vfp_neon locale-base-en-gb@cortexa9hf_vfp_neon
+ERROR: Unable to install packages. Command '/home/carl/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/bin/smart --log-level=warning --data-dir=/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/var/lib/smart install -y packagegroup-fsl-tools-gpu@wandboard run-postinsts@all nano@cortexa9hf_vfp_neon packagegroup-fsl-tools-gpu-external@wandboard btpkg@cortexa9hf_vfp_neon screen@cortexa9hf_vfp_neon wvsnp-startupscripts@cortexa9hf_vfp_neon packagegroup-wandboard-ap-test@wandboard vsftpd@cortexa9hf_vfp_neon libxbee@cortexa9hf_vfp_neon imx-test@wandboard libx264-144@cortexa9hf_vfp_neon packagegroup-core-boot@wandboard openssh@cortexa9hf_vfp_neon packagegroup-fsl-gstreamer1.0@wandboard libmongoose@cortexa9hf_vfp_neon packagegroup-fsl-gstreamer1.0-full@all packagegroup-base-extended@wandboard packagegroup-core-tools-debug@all bash@cortexa9hf_vfp_neon locale-base-en-us@cortexa9hf_vfp_neon locale-base-en-gb@cortexa9hf_vfp_neon' returned 1:
+Loading cache...
+Updating cache...               ######################################## [100%]
+
+Computing transaction...error: Can't install dropbear-2015.68-r0@cortexa9hf_vfp_neon: it's conflicted by the locked package openssh-7.1p2-r0@cortexa9hf_vfp_neon
+
+
+DEBUG: Python function do_rootfs finished
+ERROR: Function failed: do_rootfs

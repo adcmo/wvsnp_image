@@ -1,0 +1,233 @@
+#!/bin/sh
+
+# Emit a useful diagnostic if something fails:
+bb_exit_handler() {
+    ret=$?
+    case $ret in
+    0)  ;;
+    *)  case $BASH_VERSION in
+        "")   echo "WARNING: exit code $ret from a shell command.";;
+        *)    echo "WARNING: ${BASH_SOURCE[0]}:${BASH_LINENO[0]} exit $ret from
+  "$BASH_COMMAND"";;
+        esac
+        exit $ret
+    esac
+}
+trap 'bb_exit_handler' 0
+set -e
+export ROOTFS_SIZE=466944
+export prefix="/usr"
+export STRIP="arm-poky-linux-gnueabi-strip"
+export USER="carl"
+export libexecdir="/usr/lib/core-image-wvsnp-minimal"
+export datadir="/usr/share"
+export localstatedir="/var"
+export BUILD_CXX="g++ "
+export LD="arm-poky-linux-gnueabi-ld --sysroot=/home/carl/fsl-community-bsp/build/tmp/sysroots/wandboard "
+export bindir="/usr/bin"
+export TARGET_CXXFLAGS=" -O2 -pipe -g -feliminate-unused-debug-types"
+export BUILD_CC="gcc "
+export BUILD_LDFLAGS="-L/home/carl/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/lib -L/home/carl/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/lib -Wl,-rpath-link,/home/carl/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/lib -Wl,-rpath-link,/home/carl/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/lib -Wl,-rpath,/home/carl/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/lib -Wl,-rpath,/home/carl/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/lib -Wl,-O1"
+unset TARGET_ARCH
+export STRINGS="arm-poky-linux-gnueabi-strings"
+export CCACHE_DIR="/home/carl"
+export BUILD_LD="ld "
+export oldincludedir="/usr/include"
+export PSEUDO_PREFIX="/home/carl/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr"
+export BUILD_CCLD="gcc "
+export PSEUDO_DISABLED="0"
+export BUILD_CFLAGS="-isystem/home/carl/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/include -O2 -pipe"
+export PSEUDO_LOCALSTATEDIR="/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/pseudo/"
+export docdir="/usr/share/doc"
+export infodir="/usr/share/info"
+export CC="arm-poky-linux-gnueabi-gcc  -march=armv7-a -marm  -mthumb-interwork -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/home/carl/fsl-community-bsp/build/tmp/sysroots/wandboard"
+export TARGET_LDFLAGS="-Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed"
+export TERM="xterm-256color"
+export RANLIB="arm-poky-linux-gnueabi-ranlib"
+export CPPFLAGS=""
+export base_sbindir="/sbin"
+export CXX="arm-poky-linux-gnueabi-g++  -march=armv7-a -marm  -mthumb-interwork -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/home/carl/fsl-community-bsp/build/tmp/sysroots/wandboard"
+export systemd_unitdir="/lib/systemd"
+export FC="arm-poky-linux-gnueabi-gfortran  -march=armv7-a -marm  -mthumb-interwork -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/home/carl/fsl-community-bsp/build/tmp/sysroots/wandboard"
+export HOME="/home/carl"
+export BUILD_RANLIB="ranlib"
+export BUILD_FC="gfortran "
+export PSEUDO_NOSYMLINKEXP="1"
+export AS="arm-poky-linux-gnueabi-as "
+export AR="arm-poky-linux-gnueabi-ar"
+export BUILD_CPPFLAGS="-isystem/home/carl/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/include"
+export BUILD_AR="ar"
+export CPP="arm-poky-linux-gnueabi-gcc -E --sysroot=/home/carl/fsl-community-bsp/build/tmp/sysroots/wandboard  -march=armv7-a -marm  -mthumb-interwork -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9"
+export mandir="/usr/share/man"
+export sharedstatedir="/com"
+export PKG_CONFIG_SYSROOT_DIR="/home/carl/fsl-community-bsp/build/tmp/sysroots/wandboard"
+export BUILD_CXXFLAGS="-isystem/home/carl/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/include -O2 -pipe"
+export OBJCOPY="arm-poky-linux-gnueabi-objcopy"
+export CCACHE_DISABLE="1"
+export servicedir="/srv"
+export PKG_CONFIG_PATH="/home/carl/fsl-community-bsp/build/tmp/sysroots/wandboard/usr/lib/pkgconfig:/home/carl/fsl-community-bsp/build/tmp/sysroots/wandboard/usr/share/pkgconfig"
+export LC_ALL="C"
+export TARGET_CPPFLAGS=""
+export PKG_CONFIG_DIR="/home/carl/fsl-community-bsp/build/tmp/sysroots/wandboard/usr/lib/pkgconfig"
+export LDFLAGS="-Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed"
+export BUILD_NM="nm"
+export OBJDUMP="arm-poky-linux-gnueabi-objdump"
+export nonarch_libdir="/usr/lib"
+export sysconfdir="/etc"
+export CCLD="arm-poky-linux-gnueabi-gcc  -march=armv7-a -marm  -mthumb-interwork -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/home/carl/fsl-community-bsp/build/tmp/sysroots/wandboard"
+export base_libdir="/lib"
+export PATH="/home/carl/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/bin/python-native:/home/carl/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/bin/python-native:/home/carl/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/bin/pigz-native:/home/carl/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/bin/gzip-native:/home/carl/fsl-community-bsp/sources/poky/scripts:/home/carl/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/bin/arm-poky-linux-gnueabi:/home/carl/fsl-community-bsp/build/tmp/sysroots/wandboard/usr/bin/crossscripts:/home/carl/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin:/home/carl/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/bin:/home/carl/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/sbin:/home/carl/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/bin:/home/carl/fsl-community-bsp/sources/poky/scripts:/home/carl/fsl-community-bsp/sources/poky/bitbake/bin:/home/carl/bin:/home/carl/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/carl/bin"
+export TARGET_CFLAGS=" -O2 -pipe -g -feliminate-unused-debug-types"
+export base_bindir="/bin"
+export includedir="/usr/include"
+export PKG_CONFIG_LIBDIR="/home/carl/fsl-community-bsp/build/tmp/sysroots/wandboard/usr/lib/pkgconfig"
+unset MACHINE
+export sbindir="/usr/sbin"
+export CFLAGS=" -O2 -pipe -g -feliminate-unused-debug-types"
+export BUILD_AS="as "
+unset DISTRO
+export systemd_system_unitdir="/lib/systemd/system"
+export exec_prefix="/usr"
+export PKG_CONFIG_DISABLE_UNINSTALLED="yes"
+export libdir="/usr/lib"
+export nonarch_base_libdir="/lib"
+unset SHELL
+export PSEUDO_PASSWD="/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs:/home/carl/fsl-community-bsp/build/tmp/sysroots/x86_64-linux"
+export MAKE="make"
+export BUILD_CPP="gcc  -E"
+export systemd_user_unitdir="/usr/lib/systemd/user"
+export PATCH_GET="0"
+export CXXFLAGS=" -O2 -pipe -g -feliminate-unused-debug-types -fvisibility-inlines-hidden"
+export NM="arm-poky-linux-gnueabi-nm"
+export LOGNAME="carl"
+export base_prefix=""
+export BUILD_STRIP="strip"
+export PACKAGE_INSTALL="packagegroup-fsl-tools-gpu run-postinsts nano packagegroup-fsl-tools-gpu-external btpkg screen wvsnp-startupscripts packagegroup-wandboard-ap-test vsftpd libxbee imx-test libx264-144 packagegroup-core-boot openssh packagegroup-fsl-gstreamer1.0 libmongoose packagegroup-fsl-gstreamer1.0-full packagegroup-base-extended packagegroup-core-tools-debug bash"
+
+img_creation_func() {
+		if [ -z "/home/carl/fsl-community-bsp/build/tmp/deploy/images/wandboard/core-image-wvsnp-minimal-wandboard-20160914211511.rootfs.ext4" ]; then
+		bberror "SDCARD_ROOTFS is undefined. To use sdcard image from Freescale's BSP it needs to be defined."
+		exit 1
+	fi
+
+	# Align boot partition and calculate total SD card image size
+	BOOT_SPACE_ALIGNED=$(expr 8192 + 4096 - 1)
+	BOOT_SPACE_ALIGNED=$(expr ${BOOT_SPACE_ALIGNED} - ${BOOT_SPACE_ALIGNED} % 4096)
+	SDCARD_SIZE=$(expr 4096 + ${BOOT_SPACE_ALIGNED} + $ROOTFS_SIZE + 4096)
+
+	# Initialize a sparse file
+	dd if=/dev/zero of=/home/carl/fsl-community-bsp/build/tmp/deploy/images/wandboard/core-image-wvsnp-minimal-wandboard-20160914211511.rootfs.sdcard bs=1 count=0 seek=$(expr 1024 \* ${SDCARD_SIZE})
+
+	generate_imx_sdcard
+
+	cd /home/carl/fsl-community-bsp/build/tmp/deploy/images/wandboard
+	gzip -f -9 -c core-image-wvsnp-minimal-wandboard-20160914211511.rootfs.sdcard > core-image-wvsnp-minimal-wandboard-20160914211511.rootfs.sdcard.gz
+	rm core-image-wvsnp-minimal-wandboard-20160914211511.rootfs.sdcard
+}
+
+bberror() {
+	if [ -p /home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/temp/fifo.29445 ] ; then
+		printf "%b\0" "bberror $*" > /home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/temp/fifo.29445
+	else
+		echo "ERROR: $*"
+	fi
+
+}
+
+generate_imx_sdcard() {
+	# Create partition table
+	parted -s /home/carl/fsl-community-bsp/build/tmp/deploy/images/wandboard/core-image-wvsnp-minimal-wandboard-20160914211511.rootfs.sdcard mklabel msdos
+	parted -s /home/carl/fsl-community-bsp/build/tmp/deploy/images/wandboard/core-image-wvsnp-minimal-wandboard-20160914211511.rootfs.sdcard unit KiB mkpart primary fat32 4096 $(expr 4096 \+ ${BOOT_SPACE_ALIGNED})
+	parted -s /home/carl/fsl-community-bsp/build/tmp/deploy/images/wandboard/core-image-wvsnp-minimal-wandboard-20160914211511.rootfs.sdcard unit KiB mkpart primary $(expr  4096 \+ ${BOOT_SPACE_ALIGNED}) $(expr 4096 \+ ${BOOT_SPACE_ALIGNED} \+ $ROOTFS_SIZE)
+	parted /home/carl/fsl-community-bsp/build/tmp/deploy/images/wandboard/core-image-wvsnp-minimal-wandboard-20160914211511.rootfs.sdcard print
+
+	# Burn bootloader
+	case "u-boot" in
+		imx-bootlets)
+		bberror "The imx-bootlets is not supported for i.MX based machines"
+		exit 1
+		;;
+		u-boot)
+		if [ -n "SPL" ]; then
+			dd if=/home/carl/fsl-community-bsp/build/tmp/deploy/images/wandboard/SPL of=/home/carl/fsl-community-bsp/build/tmp/deploy/images/wandboard/core-image-wvsnp-minimal-wandboard-20160914211511.rootfs.sdcard conv=notrunc seek=2 bs=512
+			dd if=/home/carl/fsl-community-bsp/build/tmp/deploy/images/wandboard/u-boot-wandboard.img of=/home/carl/fsl-community-bsp/build/tmp/deploy/images/wandboard/core-image-wvsnp-minimal-wandboard-20160914211511.rootfs.sdcard conv=notrunc seek=69 bs=1K
+		else
+			dd if=/home/carl/fsl-community-bsp/build/tmp/deploy/images/wandboard/u-boot-wandboard.img of=/home/carl/fsl-community-bsp/build/tmp/deploy/images/wandboard/core-image-wvsnp-minimal-wandboard-20160914211511.rootfs.sdcard conv=notrunc seek=2 bs=512
+		fi
+		;;
+		barebox)
+		dd if=/home/carl/fsl-community-bsp/build/tmp/deploy/images/wandboard/barebox-wandboard.bin of=/home/carl/fsl-community-bsp/build/tmp/deploy/images/wandboard/core-image-wvsnp-minimal-wandboard-20160914211511.rootfs.sdcard conv=notrunc seek=1 skip=1 bs=512
+		dd if=/home/carl/fsl-community-bsp/build/tmp/deploy/images/wandboard/bareboxenv-wandboard.bin of=/home/carl/fsl-community-bsp/build/tmp/deploy/images/wandboard/core-image-wvsnp-minimal-wandboard-20160914211511.rootfs.sdcard conv=notrunc seek=1 bs=512k
+		;;
+		"")
+		;;
+		*)
+		bberror "Unknown IMAGE_BOOTLOADER value"
+		exit 1
+		;;
+	esac
+
+	_generate_boot_image 1
+
+	# Burn Partition
+	dd if=/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/boot.img of=/home/carl/fsl-community-bsp/build/tmp/deploy/images/wandboard/core-image-wvsnp-minimal-wandboard-20160914211511.rootfs.sdcard conv=notrunc,fsync seek=1 bs=$(expr 4096 \* 1024)
+	dd if=/home/carl/fsl-community-bsp/build/tmp/deploy/images/wandboard/core-image-wvsnp-minimal-wandboard-20160914211511.rootfs.ext4 of=/home/carl/fsl-community-bsp/build/tmp/deploy/images/wandboard/core-image-wvsnp-minimal-wandboard-20160914211511.rootfs.sdcard conv=notrunc,fsync seek=1 bs=$(expr ${BOOT_SPACE_ALIGNED} \* 1024 + 4096 \* 1024)
+
+}
+
+_generate_boot_image() {
+	local boot_part=$1
+
+	# Create boot partition image
+	BOOT_BLOCKS=$(LC_ALL=C parted -s /home/carl/fsl-community-bsp/build/tmp/deploy/images/wandboard/core-image-wvsnp-minimal-wandboard-20160914211511.rootfs.sdcard unit b print \
+	                  | awk "/ $boot_part / { print substr(\$4, 1, length(\$4 -1)) / 1024 }")
+
+	# mkdosfs will sometimes use FAT16 when it is not appropriate,
+	# resulting in a boot failure from SYSLINUX. Use FAT32 for
+	# images larger than 512MB, otherwise let mkdosfs decide.
+	if [ $(expr $BOOT_BLOCKS / 1024) -gt 512 ]; then
+		FATSIZE="-F 32"
+	fi
+
+	rm -f /home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/boot.img
+	mkfs.vfat -n "Boot wandboard" -S 512 ${FATSIZE} -C /home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/boot.img $BOOT_BLOCKS
+
+	mcopy -i /home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/boot.img -s /home/carl/fsl-community-bsp/build/tmp/deploy/images/wandboard/zImage-wandboard.bin ::/zImage
+
+	# Copy boot scripts
+	for item in ${BOOT_SCRIPTS}; do
+		src=`echo $item | awk -F':' '{ print $1 }'`
+		dst=`echo $item | awk -F':' '{ print $2 }'`
+
+		mcopy -i /home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/boot.img -s /home/carl/fsl-community-bsp/build/tmp/deploy/images/wandboard/$src ::/$dst
+	done
+
+	# Copy device tree file
+	if test -n "imx6q-wandboard.dtb imx6dl-wandboard.dtb"; then
+		for DTS_FILE in imx6q-wandboard.dtb imx6dl-wandboard.dtb; do
+			DTS_BASE_NAME=`basename ${DTS_FILE} | awk -F "." '{print $1}'`
+			if [ -e "/home/carl/fsl-community-bsp/build/tmp/deploy/images/wandboard/zImage-${DTS_BASE_NAME}.dtb" ]; then
+				kernel_bin="`readlink /home/carl/fsl-community-bsp/build/tmp/deploy/images/wandboard/zImage-wandboard.bin`"
+				kernel_bin_for_dtb="`readlink /home/carl/fsl-community-bsp/build/tmp/deploy/images/wandboard/zImage-${DTS_BASE_NAME}.dtb | sed "s,$DTS_BASE_NAME,wandboard,g;s,\.dtb$,.bin,g"`"
+				if [ $kernel_bin = $kernel_bin_for_dtb ]; then
+					mcopy -i /home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/boot.img -s /home/carl/fsl-community-bsp/build/tmp/deploy/images/wandboard/zImage-${DTS_BASE_NAME}.dtb ::/${DTS_BASE_NAME}.dtb
+				fi
+			else
+				bbfatal "${DTS_FILE} does not exist."
+			fi
+		done
+	fi
+
+}
+
+bbfatal() {
+	if [ -p /home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/temp/fifo.29445 ] ; then
+		printf "%b\0" "bbfatal $*" > /home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/temp/fifo.29445
+	else
+		echo "ERROR: $*"
+	fi
+	exit 1
+
+}
+
+img_creation_func

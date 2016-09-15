@@ -1,0 +1,22 @@
+def rootfs_process_ignore(d):
+    excl_pkgs = d.getVar("PACKAGE_EXCLUDE", True).split()
+    inst_pkgs = d.getVar("PACKAGE_INSTALL", True).split()
+    inst_attempt_pkgs = d.getVar("PACKAGE_INSTALL_ATTEMPTONLY", True).split()
+
+    d.setVar('PACKAGE_INSTALL_ORIG', ' '.join(inst_pkgs))
+    d.setVar('PACKAGE_INSTALL_ATTEMPTONLY', ' '.join(inst_attempt_pkgs))
+
+    for pkg in excl_pkgs:
+        if pkg in inst_pkgs:
+            bb.warn("Package %s, set to be excluded, is in %s PACKAGE_INSTALL (%s).  It will be removed from the list." % (pkg, d.getVar('PN', True), inst_pkgs))
+            inst_pkgs.remove(pkg)
+
+        if pkg in inst_attempt_pkgs:
+            bb.warn("Package %s, set to be excluded, is in %s PACKAGE_INSTALL_ATTEMPTONLY (%s).  It will be removed from the list." % (pkg, d.getVar('PN', True), inst_pkgs))
+            inst_attempt_pkgs.remove(pkg)
+
+    d.setVar("PACKAGE_INSTALL", ' '.join(inst_pkgs))
+    d.setVar("PACKAGE_INSTALL_ATTEMPTONLY", ' '.join(inst_attempt_pkgs))
+
+rootfs_process_ignore(d)
+

@@ -1,0 +1,118 @@
+#!/bin/sh
+
+# Copyright © 2011 Linaro Limited
+#
+# This file is part of glcompbench.
+#
+# glcompbench is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# glcompbench is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with glcompbench  If not, see <http://www.gnu.org/licenses/>.
+#
+# Authors:
+#  Alexandros Frantzis <alexandros.frantzis@linaro.org>
+#  Jesse Barker <jesse.barker@linaro.org>
+
+pids=""
+wids=""
+
+get_first_sh_child_of_pid()
+{
+    ps ax -o pid,ppid,comm | awk -v PID=$1 '$2 == PID && $3 == "sh" { print $1; exit }'
+}
+
+get_wid_from_pid()
+{
+    cat /proc/$1/environ | tr '\0' '\n' | awk -F= '$1=="WINDOWID" {print $2; exit}'
+}
+
+get_wid_from_xterm()
+{
+    _wid=
+    _child_pid=
+    while [ -z "$_wid" ]; do
+        if [ -z "$_child_pid" ]; then
+            _child_pid=$(get_first_sh_child_of_pid $1)
+        fi
+        if [ -n "$_child_pid" ]; then
+            _wid=$(get_wid_from_pid $_child_pid)
+        fi
+        sleep 0.1
+    done
+
+    echo $_wid
+}
+
+start_xterms()
+{
+    for i in `seq 1 $1`;
+    do
+        xterm -e sh -c "$XTERM_SH_CMD" &
+        _pid=$!
+        _wid=$(get_wid_from_xterm $_pid)
+        pids="$pids $_pid"
+        wids="$_wid,$wids"
+    done
+}
+
+stop_xterms()
+{
+    for _pid in $pids; do
+        kill $_pid
+    done
+}
+
+parse_args()
+{
+    while getopts "d:n:e:h" _opt; do
+        case "$_opt" in
+            n)
+               NWINDOWS=$OPTARG
+               ;;
+            d)
+               DELAY=$OPTARG
+               ;;
+            e)
+               GLCOMPBENCH_EXEC=$OPTARG
+               ;;
+            h)
+               echo "Usage: gl-composite-benchmark [OPTIONS] [-- [GLCOMPBENCH_OPTIONS]]"
+               echo "  -n NWINDOWS   the number of windows to use [default: 4]"
+               echo "  -d DELAY      the delay between window updates [default: 0.25]"
+               echo "  -e EXECUTABLE the glcompbench executable to use"
+               echo "  -h            display help message"
+               exit 1
+               ;;
+            *)
+               exit 1
+               ;;
+        esac
+    done
+
+    shift $((OPTIND - 1))
+
+    GLCOMPBENCH_OPTS="$@"
+}
+
+NWINDOWS=4
+DELAY=0.25
+GLCOMPBENCH_EXEC=glcompbench
+GLCOMPBENCH_OPTS=
+
+parse_args "$@"
+
+XTERM_SH_CMD="while true; do dd if=/dev/urandom count=1 | hexdump; sleep $DELAY; done"
+
+start_xterms $NWINDOWS
+
+$GLCOMPBENCH_EXEC --ids $wids $GLCOMPBENCH_OPTS
+
+stop_xterms

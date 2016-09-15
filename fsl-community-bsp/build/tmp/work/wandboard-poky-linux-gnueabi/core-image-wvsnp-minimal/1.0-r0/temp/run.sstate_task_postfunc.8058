@@ -1,0 +1,251 @@
+def sstate_task_postfunc(d):
+    shared_state = sstate_state_fromvars(d)
+
+    sstate_install(shared_state, d)
+    for intercept in shared_state['interceptfuncs']:
+        bb.build.exec_func(intercept, d, (d.getVar("WORKDIR", True),))
+    omask = os.umask(002)
+    if omask != 002:
+       bb.note("Using umask 002 (not %0o) for sstate packaging" % omask)
+    sstate_package(shared_state, d)
+    os.umask(omask)
+
+sstate_task_postfunc(d)
+
+def sstate_state_fromvars(d, task = None):
+    if task is None:
+        task = d.getVar('BB_CURRENTTASK', True)
+        if not task:
+            bb.fatal("sstate code running without task context?!")
+        task = task.replace("_setscene", "")
+
+    if task.startswith("do_"):
+        task = task[3:]
+    inputs = (d.getVarFlag("do_" + task, 'sstate-inputdirs', True) or "").split()
+    outputs = (d.getVarFlag("do_" + task, 'sstate-outputdirs', True) or "").split()
+    plaindirs = (d.getVarFlag("do_" + task, 'sstate-plaindirs', True) or "").split()
+    lockfiles = (d.getVarFlag("do_" + task, 'sstate-lockfile', True) or "").split()
+    lockfilesshared = (d.getVarFlag("do_" + task, 'sstate-lockfile-shared', True) or "").split()
+    interceptfuncs = (d.getVarFlag("do_" + task, 'sstate-interceptfuncs', True) or "").split()
+    if not task or len(inputs) != len(outputs):
+        bb.fatal("sstate variables not setup correctly?!")
+
+    if task == "populate_lic":
+        d.setVar("SSTATE_PKGSPEC", "sstate:core-image-wvsnp-minimal::1.0:r0::3:")
+        d.setVar("SSTATE_EXTRAPATH", "")
+
+    ss = sstate_init(task, d)
+    for i in range(len(inputs)):
+        sstate_add(ss, inputs[i], outputs[i], d)
+    ss['lockfiles'] = lockfiles
+    ss['lockfiles-shared'] = lockfilesshared
+    ss['plaindirs'] = plaindirs
+    ss['interceptfuncs'] = interceptfuncs
+    return ss
+
+def sstate_package(ss, d):
+    import oe.path
+
+    def make_relative_symlink(path, outputpath, d):
+        # Replace out absolute TMPDIR paths in symlinks with relative ones
+        if not os.path.islink(path):
+            return
+        link = os.readlink(path)
+        if not os.path.isabs(link):
+            return
+        if not link.startswith(tmpdir):
+            return
+
+        depth = outputpath.rpartition(tmpdir)[2].count('/')
+        base = link.partition(tmpdir)[2].strip()
+        while depth > 1:
+            base = "/.." + base
+            depth -= 1
+        base = "." + base
+
+        bb.debug(2, "Replacing absolute path %s with relative path %s for %s" % (link, base, outputpath))
+        os.remove(path)
+        os.symlink(base, path)
+
+    tmpdir = d.getVar('TMPDIR', True)
+
+    sstatebuild = d.expand("/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/sstate-build-%s/" % ss['task'])
+    sstatepkg = d.getVar('SSTATE_PKG', True) + '_'+ ss['task'] + ".tgz"
+    bb.utils.remove(sstatebuild, recurse=True)
+    bb.utils.mkdirhier(sstatebuild)
+    bb.utils.mkdirhier(os.path.dirname(sstatepkg))
+    for state in ss['dirs']:
+        if not os.path.exists(state[1]):
+            continue
+        srcbase = state[0].rstrip("/").rsplit('/', 1)[0]
+        for walkroot, dirs, files in os.walk(state[1]):
+            for file in files:
+                srcpath = os.path.join(walkroot, file)
+                dstpath = srcpath.replace(state[1], state[2])
+                make_relative_symlink(srcpath, dstpath, d)
+            for dir in dirs:
+                srcpath = os.path.join(walkroot, dir)
+                dstpath = srcpath.replace(state[1], state[2])
+                make_relative_symlink(srcpath, dstpath, d)
+        bb.debug(2, "Preparing tree %s for packaging at %s" % (state[1], sstatebuild + state[0]))
+        oe.path.copyhardlinktree(state[1], sstatebuild + state[0])
+
+    workdir = d.getVar('WORKDIR', True)
+    for plain in ss['plaindirs']:
+        pdir = plain.replace(workdir, sstatebuild)
+        bb.utils.mkdirhier(plain)
+        bb.utils.mkdirhier(pdir)
+        oe.path.copyhardlinktree(plain, pdir)
+
+    d.setVar('SSTATE_BUILDDIR', sstatebuild)
+    d.setVar('SSTATE_PKG', sstatepkg)
+
+    for f in (d.getVar('SSTATECREATEFUNCS', True) or '').split() + ['sstate_create_package'] + \
+             (d.getVar('SSTATEPOSTCREATEFUNCS', True) or '').split():
+        # All hooks should run in SSTATE_BUILDDIR.
+        bb.build.exec_func(f, d, (sstatebuild,))
+
+    bb.siggen.dump_this_task(sstatepkg + ".siginfo", d)
+
+    return
+
+def sstate_install(ss, d):
+    import oe.path
+    import oe.sstatesig
+    import subprocess
+
+    sharedfiles = []
+    shareddirs = []
+    bb.utils.mkdirhier(d.expand("/home/carl/fsl-community-bsp/build/tmp/sstate-control"))
+
+    sstateinst = d.expand("/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/sstate-install-%s/" % ss['task'])
+
+    manifest, d2 = oe.sstatesig.sstate_get_manifest_filename(ss['task'], d)
+
+    if os.access(manifest, os.R_OK):
+        bb.fatal("Package already staged (%s)?!" % manifest)
+
+    locks = []
+    for lock in ss['lockfiles-shared']:
+        locks.append(bb.utils.lockfile(lock, True))
+    for lock in ss['lockfiles']:
+        locks.append(bb.utils.lockfile(lock))
+
+    for state in ss['dirs']:
+        bb.debug(2, "Staging files from %s to %s" % (state[1], state[2]))
+        for walkroot, dirs, files in os.walk(state[1]):
+            for file in files:
+                srcpath = os.path.join(walkroot, file)
+                dstpath = srcpath.replace(state[1], state[2])
+                #bb.debug(2, "Staging %s to %s" % (srcpath, dstpath))
+                sharedfiles.append(dstpath)
+            for dir in dirs:
+                srcdir = os.path.join(walkroot, dir)
+                dstdir = srcdir.replace(state[1], state[2])
+                #bb.debug(2, "Staging %s to %s" % (srcdir, dstdir))
+                if not dstdir.endswith("/"):
+                    dstdir = dstdir + "/"
+                shareddirs.append(dstdir)
+
+    # Check the file list for conflicts against files which already exist
+    whitelist = (d.getVar("SSTATE_DUPWHITELIST", True) or "").split()
+    match = []
+    for f in sharedfiles:
+        if os.path.exists(f):
+            f = os.path.normpath(f)
+            realmatch = True
+            for w in whitelist:
+                if f.startswith(w):
+                    realmatch = False
+                    break
+            if realmatch:
+                match.append(f)
+                sstate_search_cmd = "grep -rl '%s' %s --exclude=master.list | sed -e 's:^.*/::' -e 's:\.populate-sysroot::'" % (f, d.expand("/home/carl/fsl-community-bsp/build/tmp/sstate-control"))
+                search_output = subprocess.Popen(sstate_search_cmd, shell=True, stdout=subprocess.PIPE).communicate()[0]
+                if search_output != "":
+                    match.append("Matched in %s" % search_output.rstrip())
+    if match:
+        bb.error("The recipe %s is trying to install files into a shared " \
+          "area when those files already exist. Those files and their manifest " \
+          "location are:\n   %s\nPlease verify which recipe should provide the " \
+          "above files.\nThe build has stopped as continuing in this scenario WILL " \
+          "break things, if not now, possibly in the future (we've seen builds fail " \
+          "several months later). If the system knew how to recover from this " \
+          "automatically it would however there are several different scenarios " \
+          "which can result in this and we don't know which one this is. It may be " \
+          "you have switched providers of something like virtual/kernel (e.g. from " \
+          "linux-yocto to linux-yocto-dev), in that case you need to execute the " \
+          "clean task for both recipes and it will resolve this error. It may be " \
+          "you changed DISTRO_FEATURES from systemd to udev or vice versa. Cleaning " \
+          "those recipes should again resolve this error however switching " \
+          "DISTRO_FEATURES on an existing build directory is not supported, you " \
+          "should really clean out tmp and rebuild (reusing sstate should be safe). " \
+          "It could be the overlapping files detected are harmless in which case " \
+          "adding them to SSTATE_DUPWHITELIST may be the correct solution. It could " \
+          "also be your build is including two different conflicting versions of " \
+          "things (e.g. bluez 4 and bluez 5 and the correct solution for that would " \
+          "be to resolve the conflict. If in doubt, please ask on the mailing list, " \
+          "sharing the error and filelist above." % \
+          (d.getVar('PN', True), "\n ".join(match)))
+        bb.fatal("If the above message is too much, the simpler version is you're advised to wipe out tmp and rebuild (reusing sstate is fine). That will likely fix things in most (but not all) cases.")
+
+    # Write out the manifest
+    f = open(manifest, "w")
+    for file in sharedfiles:
+        f.write(file + "\n")
+
+    # We want to ensure that directories appear at the end of the manifest
+    # so that when we test to see if they should be deleted any contents
+    # added by the task will have been removed first.
+    dirs = sorted(shareddirs, key=len)
+    # Must remove children first, which will have a longer path than the parent
+    for di in reversed(dirs):
+        f.write(di + "\n")
+    f.close()
+
+    # Append to the list of manifests for this PACKAGE_ARCH
+
+    i = d2.expand("/home/carl/fsl-community-bsp/build/tmp/sstate-control/index-wandboard")
+    l = bb.utils.lockfile(i + ".lock")
+    filedata = d.getVar("STAMP", True) + " " + d2.getVar("SSTATE_MANFILEPREFIX", True) + " " + d.getVar("WORKDIR", True) + "\n"
+    manifests = []
+    if os.path.exists(i):
+        with open(i, "r") as f:
+            manifests = f.readlines()
+    if filedata not in manifests:
+        with open(i, "a+") as f:
+            f.write(filedata)
+    bb.utils.unlockfile(l)
+
+    # Run the actual file install
+    for state in ss['dirs']:
+        if os.path.exists(state[1]):
+            oe.path.copyhardlinktree(state[1], state[2])
+
+    for postinst in (d.getVar('SSTATEPOSTINSTFUNCS', True) or '').split():
+        # All hooks should run in the SSTATE_INSTDIR
+        bb.build.exec_func(postinst, d, (sstateinst,))
+
+    for lock in locks:
+        bb.utils.unlockfile(lock)
+
+def sstate_add(ss, source, dest, d):
+    if not source.endswith("/"):
+         source = source + "/"
+    if not dest.endswith("/"):
+         dest = dest + "/"
+    source = os.path.normpath(source)
+    dest = os.path.normpath(dest)
+    srcbase = os.path.basename(source)
+    ss['dirs'].append([srcbase, source, dest])
+    return ss
+
+def sstate_init(task, d):
+    ss = {}
+    ss['task'] = task
+    ss['dirs'] = []
+    ss['plaindirs'] = []
+    ss['lockfiles'] = []
+    ss['lockfiles-shared'] = []
+    return ss
+

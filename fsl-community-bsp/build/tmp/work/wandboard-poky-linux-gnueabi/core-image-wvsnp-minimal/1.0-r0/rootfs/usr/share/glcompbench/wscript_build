@@ -1,0 +1,2 @@
+bld.install_files('${GLCOMPBENCH_DATA_PATH}',
+                  bld.path.ant_glob('*'))

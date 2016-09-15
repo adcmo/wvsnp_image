@@ -1,0 +1,135 @@
+#!/bin/sh
+
+# Emit a useful diagnostic if something fails:
+bb_exit_handler() {
+    ret=$?
+    case $ret in
+    0)  ;;
+    *)  case $BASH_VERSION in
+        "")   echo "WARNING: exit code $ret from a shell command.";;
+        *)    echo "WARNING: ${BASH_SOURCE[0]}:${BASH_LINENO[0]} exit $ret from
+  "$BASH_COMMAND"";;
+        esac
+        exit $ret
+    esac
+}
+trap 'bb_exit_handler' 0
+set -e
+export ROOTFS_SIZE=466944
+export prefix="/usr"
+export STRIP="arm-poky-linux-gnueabi-strip"
+export USER="carl"
+export libexecdir="/usr/lib/core-image-wvsnp-minimal"
+export datadir="/usr/share"
+export localstatedir="/var"
+export BUILD_CXX="g++ "
+export LD="arm-poky-linux-gnueabi-ld --sysroot=/home/carl/fsl-community-bsp/build/tmp/sysroots/wandboard "
+export bindir="/usr/bin"
+export TARGET_CXXFLAGS=" -O2 -pipe -g -feliminate-unused-debug-types"
+export BUILD_CC="gcc "
+export BUILD_LDFLAGS="-L/home/carl/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/lib -L/home/carl/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/lib -Wl,-rpath-link,/home/carl/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/lib -Wl,-rpath-link,/home/carl/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/lib -Wl,-rpath,/home/carl/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/lib -Wl,-rpath,/home/carl/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/lib -Wl,-O1"
+unset TARGET_ARCH
+export STRINGS="arm-poky-linux-gnueabi-strings"
+export CCACHE_DIR="/home/carl"
+export BUILD_LD="ld "
+export oldincludedir="/usr/include"
+export PSEUDO_PREFIX="/home/carl/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr"
+export BUILD_CCLD="gcc "
+export PSEUDO_DISABLED="0"
+export BUILD_CFLAGS="-isystem/home/carl/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/include -O2 -pipe"
+export PSEUDO_LOCALSTATEDIR="/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/pseudo/"
+export docdir="/usr/share/doc"
+export infodir="/usr/share/info"
+export CC="arm-poky-linux-gnueabi-gcc  -march=armv7-a -marm  -mthumb-interwork -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/home/carl/fsl-community-bsp/build/tmp/sysroots/wandboard"
+export TARGET_LDFLAGS="-Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed"
+export TERM="xterm-256color"
+export RANLIB="arm-poky-linux-gnueabi-ranlib"
+export CPPFLAGS=""
+export base_sbindir="/sbin"
+export CXX="arm-poky-linux-gnueabi-g++  -march=armv7-a -marm  -mthumb-interwork -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/home/carl/fsl-community-bsp/build/tmp/sysroots/wandboard"
+export systemd_unitdir="/lib/systemd"
+export FC="arm-poky-linux-gnueabi-gfortran  -march=armv7-a -marm  -mthumb-interwork -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/home/carl/fsl-community-bsp/build/tmp/sysroots/wandboard"
+export HOME="/home/carl"
+export BUILD_RANLIB="ranlib"
+export BUILD_FC="gfortran "
+export PSEUDO_NOSYMLINKEXP="1"
+export AS="arm-poky-linux-gnueabi-as "
+export AR="arm-poky-linux-gnueabi-ar"
+export BUILD_CPPFLAGS="-isystem/home/carl/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/include"
+export BUILD_AR="ar"
+export CPP="arm-poky-linux-gnueabi-gcc -E --sysroot=/home/carl/fsl-community-bsp/build/tmp/sysroots/wandboard  -march=armv7-a -marm  -mthumb-interwork -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9"
+export mandir="/usr/share/man"
+export sharedstatedir="/com"
+export PKG_CONFIG_SYSROOT_DIR="/home/carl/fsl-community-bsp/build/tmp/sysroots/wandboard"
+export BUILD_CXXFLAGS="-isystem/home/carl/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/include -O2 -pipe"
+export OBJCOPY="arm-poky-linux-gnueabi-objcopy"
+export CCACHE_DISABLE="1"
+export servicedir="/srv"
+export PKG_CONFIG_PATH="/home/carl/fsl-community-bsp/build/tmp/sysroots/wandboard/usr/lib/pkgconfig:/home/carl/fsl-community-bsp/build/tmp/sysroots/wandboard/usr/share/pkgconfig"
+export LC_ALL="C"
+export TARGET_CPPFLAGS=""
+export PKG_CONFIG_DIR="/home/carl/fsl-community-bsp/build/tmp/sysroots/wandboard/usr/lib/pkgconfig"
+export LDFLAGS="-Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed"
+export BUILD_NM="nm"
+export OBJDUMP="arm-poky-linux-gnueabi-objdump"
+export nonarch_libdir="/usr/lib"
+export sysconfdir="/etc"
+export CCLD="arm-poky-linux-gnueabi-gcc  -march=armv7-a -marm  -mthumb-interwork -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/home/carl/fsl-community-bsp/build/tmp/sysroots/wandboard"
+export base_libdir="/lib"
+export PATH="/home/carl/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/bin/python-native:/home/carl/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/bin/python-native:/home/carl/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/bin/pigz-native:/home/carl/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/bin/gzip-native:/home/carl/fsl-community-bsp/sources/poky/scripts:/home/carl/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/bin/arm-poky-linux-gnueabi:/home/carl/fsl-community-bsp/build/tmp/sysroots/wandboard/usr/bin/crossscripts:/home/carl/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin:/home/carl/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/bin:/home/carl/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/sbin:/home/carl/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/bin:/home/carl/fsl-community-bsp/sources/poky/scripts:/home/carl/fsl-community-bsp/sources/poky/bitbake/bin:/home/carl/bin:/home/carl/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/carl/bin"
+export TARGET_CFLAGS=" -O2 -pipe -g -feliminate-unused-debug-types"
+export base_bindir="/bin"
+export includedir="/usr/include"
+export PKG_CONFIG_LIBDIR="/home/carl/fsl-community-bsp/build/tmp/sysroots/wandboard/usr/lib/pkgconfig"
+unset MACHINE
+export sbindir="/usr/sbin"
+export CFLAGS=" -O2 -pipe -g -feliminate-unused-debug-types"
+export BUILD_AS="as "
+unset DISTRO
+export systemd_system_unitdir="/lib/systemd/system"
+export exec_prefix="/usr"
+export PKG_CONFIG_DISABLE_UNINSTALLED="yes"
+export libdir="/usr/lib"
+export nonarch_base_libdir="/lib"
+unset SHELL
+export PSEUDO_PASSWD="/home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs:/home/carl/fsl-community-bsp/build/tmp/sysroots/x86_64-linux"
+export MAKE="make"
+export BUILD_CPP="gcc  -E"
+export systemd_user_unitdir="/usr/lib/systemd/user"
+export PATCH_GET="0"
+export CXXFLAGS=" -O2 -pipe -g -feliminate-unused-debug-types -fvisibility-inlines-hidden"
+export NM="arm-poky-linux-gnueabi-nm"
+export LOGNAME="carl"
+export base_prefix=""
+export BUILD_STRIP="strip"
+export PACKAGE_INSTALL="packagegroup-fsl-tools-gpu run-postinsts nano packagegroup-fsl-tools-gpu-external btpkg screen wvsnp-startupscripts packagegroup-wandboard-ap-test vsftpd libxbee imx-test libx264-144 packagegroup-core-boot openssh packagegroup-fsl-gstreamer1.0 libmongoose packagegroup-fsl-gstreamer1.0-full packagegroup-base-extended packagegroup-core-tools-debug bash"
+
+img_creation_func() {
+	oe_mkext234fs ext4 -i 4096
+	cd /home/carl/fsl-community-bsp/build/tmp/deploy/images/wandboard
+}
+
+oe_mkext234fs() {
+	fstype=$1
+	extra_imagecmd=""
+
+	if [ $# -gt 1 ]; then
+		shift
+		extra_imagecmd=$@
+	fi
+
+	# If generating an empty image the size of the sparse block should be large
+	# enough to allocate an ext4 filesystem using 4096 bytes per inode, this is
+	# about 60K, so dd needs a minimum count of 60, with bs=1024 (bytes per IO)
+	eval local COUNT=\"0\"
+	eval local MIN_COUNT=\"60\"
+	if [ $ROOTFS_SIZE -lt $MIN_COUNT ]; then
+		eval COUNT=\"$MIN_COUNT\"
+	fi
+	# Create a sparse image block
+	dd if=/dev/zero of=/home/carl/fsl-community-bsp/build/tmp/deploy/images/wandboard/core-image-wvsnp-minimal-wandboard-20160914211511.rootfs.$fstype seek=$ROOTFS_SIZE count=$COUNT bs=1024
+	mkfs.$fstype -F $extra_imagecmd /home/carl/fsl-community-bsp/build/tmp/deploy/images/wandboard/core-image-wvsnp-minimal-wandboard-20160914211511.rootfs.$fstype -d /home/carl/fsl-community-bsp/build/tmp/work/wandboard-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs
+
+}
+
+img_creation_func
