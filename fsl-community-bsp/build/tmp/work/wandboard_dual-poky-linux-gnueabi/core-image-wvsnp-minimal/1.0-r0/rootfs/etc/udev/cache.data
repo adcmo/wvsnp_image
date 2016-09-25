@@ -1,0 +1,79 @@
+Linux version 3.14.28_1.0.0_ga-wandboard+g08f5291 (carl@mort) (gcc version 4.9.2 (GCC) ) #1 SMP PREEMPT Wed Sep 21 15:47:49 MST 2016
+console=ttymxc0,115200 root=/dev/nfs ip=dhcp nfsroot=10.1.2.186:/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/,v3,tcp
+Character devices:
+  1 mem
+  4 /dev/vc/0
+  4 tty
+  5 /dev/tty
+  5 /dev/console
+  5 /dev/ptmx
+  7 vcs
+ 10 misc
+ 13 input
+ 29 fb
+ 81 video4linux
+ 89 i2c
+ 90 mtd
+116 alsa
+128 ptm
+136 pts
+180 usb
+188 ttyUSB
+189 usb_device
+199 galcore
+207 ttymxc
+226 drm
+246 mxc_vpu
+247 ttyHS
+248 ttyLP
+249 mxc_hdmi
+250 iio
+251 mxc_ipu
+252 ptp
+253 pps
+254 rtc
+
+Block devices:
+  1 ramdisk
+259 blkext
+  7 loop
+  8 sd
+ 31 mtdblock
+ 65 sd
+ 66 sd
+ 67 sd
+ 68 sd
+ 69 sd
+ 70 sd
+ 71 sd
+128 sd
+129 sd
+130 sd
+131 sd
+132 sd
+133 sd
+134 sd
+135 sd
+179 mmc
+3025 1474498677 lib 42-usb-hid-pm.rules
+3652 1474498677 lib 50-udev-default.rules
+646 1474498677 lib 60-cdrom_id.rules
+616 1474498677 lib 60-persistent-alsa.rules
+2400 1474498677 lib 60-persistent-input.rules
+947 1474498677 lib 60-persistent-serial.rules
+1420 1474498677 lib 60-persistent-storage-tape.rules
+5622 1474498677 lib 60-persistent-storage.rules
+769 1474498677 lib 60-persistent-v4l.rules
+166 1474498677 lib 61-accelerometer.rules
+570 1474498677 lib 75-net-description.rules
+255 1474498677 lib 75-probe_mtd.rules
+570 1474498677 lib 75-tty-description.rules
+4174 1474498677 lib 78-sound-card.rules
+565 1474498677 lib 80-drivers.rules
+399 1474501722 lib 90-alsa-restore.rules
+3328 1474498677 lib 95-keyboard-force-release.rules
+11644 1474498677 lib 95-keymap.rules
+155 1474498677 lib 95-udev-late.rules
+1356 1474498849 lib 97-bluetooth-hid2hci.rules
+1449 1474502147 etc 10-imx.rules
+885 1474498678 etc local.rules

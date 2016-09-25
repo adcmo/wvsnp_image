@@ -1,0 +1,794 @@
+DEBUG: Executing python function rootfs_process_ignore
+DEBUG: Python function rootfs_process_ignore finished
+DEBUG: Executing python function rootfs_runtime_mapping
+DEBUG: Python function rootfs_runtime_mapping finished
+DEBUG: Executing python function do_rootfs
+NOTE: configuring RPM platform settings
+NOTE: configuring RPM system provides
+NOTE: configuring RPM DB settings
+NOTE: configuring Smart settings
+NOTE: Note: adding Smart channel wandboard_dual (105)
+NOTE: Note: adding Smart channel cortexa9hf_vfp_neon_mx6qdl (100)
+NOTE: Note: adding Smart channel cortexa9hf_vfp_neon (95)
+NOTE: Note: adding Smart channel all (90)
+NOTE: adding Smart RPM DB channel
+NOTE: Note: configuring RPM cross-install scriptlet_wrapper
+NOTE: ###### Generate rootfs #######
+NOTE: Executing '/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/bin/createrepo --dbpath /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rpmdb/cortexa9hf_vfp_neon_mx6qdl --update -q /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/deploy/rpm/cortexa9hf_vfp_neon_mx6qdl' ...
+NOTE: Executing '/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/bin/createrepo --dbpath /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rpmdb/wandboard_dual --update -q /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/deploy/rpm/wandboard_dual' ...
+NOTE: Executing '/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/bin/createrepo --dbpath /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rpmdb/cortexa9hf_vfp_neon --update -q /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/deploy/rpm/cortexa9hf_vfp_neon' ...
+NOTE: Executing '/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/bin/createrepo --dbpath /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rpmdb/all --update -q /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/deploy/rpm/all' ...
+NOTE: Previous repo file missing: /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/deploy/rpm/all/repodata/primary.xml.gz
+
+NOTE: Previous repo file missing: /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/deploy/rpm/wandboard_dual/repodata/primary.xml.gz
+
+NOTE: Previous repo file missing: /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/deploy/rpm/cortexa9hf_vfp_neon_mx6qdl/repodata/primary.xml.gz
+
+NOTE: Previous repo file missing: /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/deploy/rpm/cortexa9hf_vfp_neon/repodata/primary.xml.gz
+
+NOTE: Installing the following packages: wvsnp-startupscripts packagegroup-fsl-gstreamer-full packagegroup-fslc-gstreamer1.0 vsftpd libxbee libmongoose nano packagegroup-core-boot packagegroup-fslc-gstreamer1.0-full libx264-133 btpkg screen packagegroup-fsl-tools-gpu-external packagegroup-fsl-gstreamer bash packagegroup-fsl-tools-gpu run-postinsts openssh packagegroup-core-tools-debug packagegroup-wandboard-ap-test imx-test packagegroup-base-extended locale-base-en-us locale-base-en-gb
+NOTE: to be installed: wvsnp-startupscripts@cortexa9hf_vfp_neon packagegroup-fsl-gstreamer-full@all packagegroup-fslc-gstreamer1.0@wandboard_dual vsftpd@cortexa9hf_vfp_neon libxbee@cortexa9hf_vfp_neon libmongoose@cortexa9hf_vfp_neon nano@cortexa9hf_vfp_neon packagegroup-core-boot@wandboard_dual packagegroup-fslc-gstreamer1.0-full@all libx264-133@cortexa9hf_vfp_neon btpkg@cortexa9hf_vfp_neon screen@cortexa9hf_vfp_neon packagegroup-fsl-tools-gpu-external@wandboard_dual packagegroup-fsl-gstreamer@wandboard_dual bash@cortexa9hf_vfp_neon packagegroup-fsl-tools-gpu@wandboard_dual run-postinsts@all openssh@cortexa9hf_vfp_neon packagegroup-core-tools-debug@all packagegroup-wandboard-ap-test@wandboard_dual imx-test@wandboard_dual packagegroup-base-extended@wandboard_dual locale-base-en-us@cortexa9hf_vfp_neon locale-base-en-gb@cortexa9hf_vfp_neon
+NOTE: /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/bin/smart --quiet --data-dir=/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/var/lib/smart install -y wvsnp-startupscripts@cortexa9hf_vfp_neon packagegroup-fsl-gstreamer-full@all packagegroup-fslc-gstreamer1.0@wandboard_dual vsftpd@cortexa9hf_vfp_neon libxbee@cortexa9hf_vfp_neon libmongoose@cortexa9hf_vfp_neon nano@cortexa9hf_vfp_neon packagegroup-core-boot@wandboard_dual packagegroup-fslc-gstreamer1.0-full@all libx264-133@cortexa9hf_vfp_neon btpkg@cortexa9hf_vfp_neon screen@cortexa9hf_vfp_neon packagegroup-fsl-tools-gpu-external@wandboard_dual packagegroup-fsl-gstreamer@wandboard_dual bash@cortexa9hf_vfp_neon packagegroup-fsl-tools-gpu@wandboard_dual run-postinsts@all openssh@cortexa9hf_vfp_neon packagegroup-core-tools-debug@all packagegroup-wandboard-ap-test@wandboard_dual imx-test@wandboard_dual packagegroup-base-extended@wandboard_dual locale-base-en-us@cortexa9hf_vfp_neon locale-base-en-gb@cortexa9hf_vfp_neon
+NOTE: Output from bash-4.3-r1@cortexa9hf_vfp_neon:
+grep: /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/etc/shells: No such file or directory
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/bin/sh to /bin/bash
+Output from busybox-1.23.1-r0@cortexa9hf_vfp_neon:
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/ar to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/bin/gunzip to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/bin/zcat to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/bunzip2 to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/bzcat to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/bin/cpio to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/bin/gzip to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/bin/tar to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/unzip to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/bin/date to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/groups to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/id to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/shuf to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/bin/touch to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/unlink to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/users to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/who to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/awk to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/cmp to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/diff to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/patch to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/bin/sed to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/bin/vi to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/find to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/bin/grep to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/bin/egrep to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/bin/fgrep to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/xargs to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/sbin/halt to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/sbin/poweroff to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/sbin/reboot to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/mesg to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/sbin/rfkill to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/sbin/depmod to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/sbin/insmod to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/sbin/lsmod to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/sbin/modprobe to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/sbin/rmmod to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/bin/ash to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/bin/sh to /bin/bash
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/bin/fatattr to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/sbin/fstrim to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/[ to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/[[ to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/sbin/addgroup to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/sbin/adduser to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/basename to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/bin/cat to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/bin/chattr to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/bin/chgrp to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/bin/chmod to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/bin/chown to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/sbin/chroot to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/chvt to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/clear to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/bin/cp to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/cut to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/dc to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/bin/dd to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/deallocvt to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/sbin/delgroup to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/sbin/deluser to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/bin/df to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/dirname to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/bin/dmesg to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/bin/dnsdomainname to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/du to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/bin/dumpkmap to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/dumpleases to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/bin/echo to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/env to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/expr to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/bin/false to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/sbin/fbset to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/sbin/fdisk to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/flock to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/free to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/sbin/fsck to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/fuser to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/sbin/getty to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/head to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/hexdump to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/bin/hostname to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/sbin/hwclock to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/sbin/ifconfig to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/sbin/ifdown to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/sbin/ifup to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/sbin/ip to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/bin/kill to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/killall to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/sbin/klogd to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/less to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/bin/ln to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/sbin/loadfont to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/sbin/loadkmap to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/logger to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/logname to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/sbin/logread to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/sbin/losetup to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/bin/ls to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/md5sum to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/microcom to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/bin/mkdir to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/mkfifo to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/bin/mknod to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/sbin/mkswap to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/bin/mktemp to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/bin/more to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/bin/mount to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/bin/mv to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/nc to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/bin/netstat to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/nohup to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/nslookup to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/od to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/openvt to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/bin/pidof to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/sbin/pivot_root to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/printf to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/bin/ps to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/bin/pwd to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/sbin/rdate to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/readlink to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/realpath to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/renice to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/reset to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/bin/rm to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/bin/rmdir to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/sbin/route to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/bin/run-parts to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/seq to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/sbin/setconsole to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/sha3sum to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/bin/sleep to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/sort to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/sbin/start-stop-daemon to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/bin/stat to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/strings to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/bin/stty to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/sbin/sulogin to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/sbin/swapoff to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/sbin/swapon to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/sbin/switch_root to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/bin/sync to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/sbin/sysctl to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/sbin/syslogd to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/tail to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/tee to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/telnet to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/test to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/tftp to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/time to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/top to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/tr to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/bin/true to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/tty to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/sbin/udhcpc to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/sbin/udhcpd to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/bin/umount to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/bin/uname to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/uniq to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/uptime to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/bin/usleep to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/bin/watch to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/wc to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/wget to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/which to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/whoami to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/yes to /bin/busybox.nosuid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/bin/ping to /bin/busybox.suid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/bin/ping6 to /bin/busybox.suid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/bin/login to /bin/busybox.suid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/passwd to /bin/busybox.suid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/bin/su to /bin/busybox.suid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/traceroute to /bin/busybox.suid
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/vlock to /bin/busybox.suid
+Output from udev-cache-182-r9@cortexa9hf_vfp_neon:
+ Removing any system startup links for udev-cache ...
+ Adding system startup for /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/etc/init.d/udev-cache.
+Output from ca-certificates-20141019-r0@all:
+Updating certificates in /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/etc/ssl/certs... 173 added, 0 removed; done.
+Running hooks in /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/etc/ca-certificates/update.d....done.
+Output from busybox-hwclock-1.23.1-r0@cortexa9hf_vfp_neon:
+ Removing any system startup links for hwclock.sh ...
+ Adding system startup for /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/etc/init.d/hwclock.sh.
+Output from kernel-image-3.14.28-1.0.0-ga-wandboard+g08f5291-3.14.28-r0@wandboard_dual:
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/boot/zImage to /boot/zImage-3.14.28_1.0.0_ga-wandboard+g08f5291
+Output from openssh-scp-6.7p1-r0@cortexa9hf_vfp_neon:
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/scp to /usr/bin/scp.openssh
+Output from shadow-base-4.2.1-r0@cortexa9hf_vfp_neon:
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/newgrp to /usr/bin/newgrp.shadow
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/groups to /usr/bin/groups.shadow
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/bin/login to /bin/login.shadow
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/bin/su to /bin/su.shadow
+Output from modutils-initscripts-1.0-r7@cortexa9hf_vfp_neon:
+ Removing any system startup links for modutils.sh ...
+ Adding system startup for /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/etc/init.d/modutils.sh.
+Output from busybox-syslog-1.23.1-r0@cortexa9hf_vfp_neon:
+ Removing any system startup links for syslog ...
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/etc/syslog.conf to /etc/syslog.conf.busybox
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/etc/init.d/syslog to /etc/init.d/syslog.busybox
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/etc/syslog-startup.conf to /etc/syslog-startup.conf.busybox
+ Adding system startup for /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/etc/init.d/syslog.
+Output from sysvinit-pidof-2.88dsf-r14@cortexa9hf_vfp_neon:
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/bin/pidof to /bin/pidof.sysvinit
+Output from initscripts-functions-1.0-r155@cortexa9hf_vfp_neon:
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/etc/init.d/functions to /etc/init.d/functions.initscripts
+Output from util-linux-sulogin-2.25.2-r1@cortexa9hf_vfp_neon:
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/sbin/sulogin to /sbin/sulogin.util-linux
+Output from init-ifupdown-1.0-r7@cortexa9hf_vfp_neon:
+ Removing any system startup links for networking ...
+ Adding system startup for /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/etc/init.d/networking.
+Output from linux-firmware-bcm4330-1:0.0+git0+0e5f63771d-r0@all:
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/lib/firmware/brcm/brcmfmac-sdio.bin to /lib/firmware/brcm/brcmfmac4330-sdio.bin
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/lib/firmware/brcm/brcmfmac4330-sdio.bin to /lib/firmware/brcm/brcmfmac4330-ap-sdio.bin
+Output from linux-firmware-bcm4329-1:0.0+git0+0e5f63771d-r0@all:
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/lib/firmware/brcm/brcmfmac-sdio.bin to /lib/firmware/brcm/brcmfmac4329-sdio.bin
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/lib/firmware/brcm/brcmfmac4329-sdio.bin to /lib/firmware/brcm/brcmfmac4329-ap-sdio.bin
+Output from run-postinsts-1.0-r9@all:
+ Removing any system startup links for run-postinsts ...
+ Adding system startup for /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/etc/init.d/run-postinsts.
+Output from shadow-4.2.1-r0@cortexa9hf_vfp_neon:
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/passwd to /usr/bin/passwd.shadow
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/chfn to /usr/bin/chfn.shadow
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/chsh to /usr/bin/chsh.shadow
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/sbin/chpasswd to /usr/sbin/chpasswd.shadow
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/sbin/vipw to /sbin/vipw.shadow
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/sbin/vigr to /sbin/vigr.shadow
+Output from kmod-19+git0+fd56638aed-r0@cortexa9hf_vfp_neon:
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/sbin/insmod to /sbin/insmod.kmod
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/sbin/modprobe to /sbin/modprobe.kmod
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/sbin/rmmod to /sbin/rmmod.kmod
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/sbin/modinfo to /sbin/modinfo.kmod
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/bin/lsmod to /bin/lsmod.kmod
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/sbin/lsmod to /bin/lsmod.kmod
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/sbin/depmod to /sbin/depmod.kmod
+Output from sysvinit-2.88dsf-r14@cortexa9hf_vfp_neon:
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/sbin/init to /sbin/init.sysvinit
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/bin/mountpoint to /bin/mountpoint.sysvinit
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/sbin/halt to /sbin/halt.sysvinit
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/sbin/reboot to /sbin/reboot.sysvinit
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/sbin/runlevel to /sbin/runlevel.sysvinit
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/sbin/shutdown to /sbin/shutdown.sysvinit
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/sbin/poweroff to /sbin/poweroff.sysvinit
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/last to /usr/bin/last.sysvinit
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/mesg to /usr/bin/mesg.sysvinit
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/utmpdump to /usr/bin/utmpdump.sysvinit
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/wall to /usr/bin/wall.sysvinit
+Output from openssh-ssh-6.7p1-r0@cortexa9hf_vfp_neon:
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/ssh to /usr/bin/ssh.openssh
+Output from apmd-3.2.2+14-r2@cortexa9hf_vfp_neon:
+ Removing any system startup links for apmd ...
+ Adding system startup for /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/etc/init.d/apmd.
+Output from alsa-state-0.2.0-r5@wandboard_dual:
+ Removing any system startup links for alsa-state ...
+ Adding system startup for /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/etc/init.d/alsa-state.
+Output from vsftpd-3.0.2-r0@cortexa9hf_vfp_neon:
+ Removing any system startup links for vsftpd ...
+Running groupadd commands...
+NOTE: Performing groupadd with [--root /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs -r ftp] and 10 times of retry
+Running useradd commands...
+NOTE: Performing useradd with [--root /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs --system --home-dir /var/lib/ftp --no-create-home -g ftp                        --shell /bin/false ftp ] and 10 times of retry
+ Adding system startup for /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/etc/init.d/vsftpd.
+Output from rpcbind-0.2.2-r0@cortexa9hf_vfp_neon:
+ Removing any system startup links for rpcbind ...
+Running useradd commands...
+NOTE: Performing useradd with [--root /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs --system --no-create-home --home-dir /                        --shell /bin/false --user-group rpc] and 10 times of retry
+ Adding system startup for /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/etc/init.d/rpcbind.
+Output from udev-182-r9@cortexa9hf_vfp_neon:
+ Removing any system startup links for udev ...
+ Adding system startup for /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/etc/init.d/udev.
+Output from avahi-daemon-0.6.31-r11.1@cortexa9hf_vfp_neon:
+ Removing any system startup links for avahi-daemon ...
+Running useradd commands...
+NOTE: Performing useradd with [--root /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs --system --home /var/run/avahi-daemon                               --no-create-home --shell /bin/false                               --user-group avahi] and 10 times of retry
+ Adding system startup for /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/etc/init.d/avahi-daemon.
+Output from openssh-sshd-6.7p1-r0@cortexa9hf_vfp_neon:
+ Removing any system startup links for sshd ...
+Running useradd commands...
+NOTE: Performing useradd with [--root /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs --system --no-create-home --home-dir /var/run/sshd --shell /bin/false --user-group sshd] and 10 times of retry
+ Adding system startup for /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/etc/init.d/sshd.
+Output from dbus-1-1.8.10-r0@cortexa9hf_vfp_neon:
+ Removing any system startup links for dbus-1 ...
+Running groupadd commands...
+NOTE: Performing groupadd with [--root /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs -r netdev] and 10 times of retry
+Running useradd commands...
+NOTE: Performing useradd with [--root /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs --system --home /var/lib/dbus                        --no-create-home --shell /bin/false                        --user-group messagebus] and 10 times of retry
+ Adding system startup for /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/etc/init.d/dbus-1.
+Output from ofono-1.16-r0@cortexa9hf_vfp_neon:
+ Removing any system startup links for ofono ...
+ Adding system startup for /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/etc/init.d/ofono.
+Output from hostap-daemon-2.0-r0@cortexa9hf_vfp_neon:
+ Removing any system startup links for hostapd ...
+ Adding system startup for /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/etc/init.d/hostapd.
+Output from xserver-xorg-extension-viv-autohdmi-3:5.0.11.p4.5-r0@cortexa9hf_vfp_neon_mx6qdl:
+ Removing any system startup links for rc.autohdmi ...
+ Adding system startup for /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/etc/init.d/rc.autohdmi.
+Output from imx-gpu-viv-tools-1:5.0.11.p4.5+hfp-r0@cortexa9hf_vfp_neon_mx6qdl:
+warning: group pulse does not exist - using root
+Output from imx-gpu-viv-tools-apitrace-1:5.0.11.p4.5+hfp-r0@cortexa9hf_vfp_neon_mx6qdl:
+warning: group pulse does not exist - using root
+warning: group pulse does not exist - using root
+warning: group pulse does not exist - using root
+warning: group pulse does not exist - using root
+warning: group pulse does not exist - using root
+warning: group pulse does not exist - using root
+warning: group pulse does not exist - using root
+warning: group pulse does not exist - using root
+warning: group pulse does not exist - using root
+warning: group pulse does not exist - using root
+warning: group pulse does not exist - using root
+warning: group pulse does not exist - using root
+warning: group pulse does not exist - using root
+warning: group pulse does not exist - using root
+warning: group pulse does not exist - using root
+warning: group pulse does not exist - using root
+Output from neard-0.15-r0@cortexa9hf_vfp_neon:
+ Removing any system startup links for neard ...
+ Adding system startup for /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/etc/init.d/neard.
+Output from libgtk-2.0-2.24.25-r0@cortexa9hf_vfp_neon:
+update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/gtk-update-icon-cache to /usr/bin/gtk-update-icon-cache-2.0
+
+
+NOTE: Installing the following packages: 
+NOTE: Installing complementary packages ...
+NOTE: Installing the following packages: libsoup-2.4-locale-en-gb gst-plugins-bad-locale-en-gb gstreamer1.0-plugins-bad-locale-en-gb gstreamer-locale-en-gb avahi-locale-en-gb gst-plugins-base-locale-en-gb gstreamer1.0-plugins-good-locale-en-gb gst-plugins-good-locale-en-gb libatk-1.0-locale-en-gb gtk+-locale-en-gb glib-networking-locale-en-gb gst-plugins-gl-locale-en libglib-2.0-locale-en-gb glibc-locale-en-gb gstreamer1.0-plugins-base-locale-en-gb gconf-locale-en-gb gstreamer1.0-locale-en-gb gstreamer1.0-plugins-ugly-locale-en-gb gdk-pixbuf-locale-en-gb
+NOTE: installing attempt only packages...
+NOTE: Attempting libsoup-2.4-locale-en-gb@cortexa9hf_vfp_neon gst-plugins-bad-locale-en-gb@cortexa9hf_vfp_neon gstreamer1.0-plugins-bad-locale-en-gb@cortexa9hf_vfp_neon_mx6qdl gstreamer-locale-en-gb@cortexa9hf_vfp_neon avahi-locale-en-gb@cortexa9hf_vfp_neon gst-plugins-base-locale-en-gb@cortexa9hf_vfp_neon_mx6qdl gstreamer1.0-plugins-good-locale-en-gb@cortexa9hf_vfp_neon gst-plugins-good-locale-en-gb@cortexa9hf_vfp_neon libatk-1.0-locale-en-gb@cortexa9hf_vfp_neon gtk+-locale-en-gb@cortexa9hf_vfp_neon glib-networking-locale-en-gb@cortexa9hf_vfp_neon gst-plugins-gl-locale-en@cortexa9hf_vfp_neon_mx6qdl libglib-2.0-locale-en-gb@cortexa9hf_vfp_neon glibc-locale-en-gb@cortexa9hf_vfp_neon gstreamer1.0-plugins-base-locale-en-gb@cortexa9hf_vfp_neon_mx6qdl gconf-locale-en-gb@cortexa9hf_vfp_neon gstreamer1.0-locale-en-gb@cortexa9hf_vfp_neon gstreamer1.0-plugins-ugly-locale-en-gb@cortexa9hf_vfp_neon gdk-pixbuf-locale-en-gb@cortexa9hf_vfp_neon
+NOTE: 
+
+NOTE: Running intercept scripts:
+NOTE: > Executing update_font_cache intercept ...
+FC_DEBUG=1
+/usr/share/fonts: skipping, existing cache is valid: 0 fonts, 1 dirs
+/usr/share/fonts/ttf: skipping, existing cache is valid: 12 fonts, 0 dirs
+/home/carl/.local/share/fonts: skipping, no such directory
+/home/carl/.fonts: skipping, no such directory
+Re-scanning /usr/share/fonts: caching, new cache contents: 0 fonts, 1 dirs
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs//var/cache/fontconfig: cleaning cache directory
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs//home/carl/.cache/fontconfig: not cleaning non-existent cache directory
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs//home/carl/.fontconfig: not cleaning non-existent cache directory
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/fc-cache: succeeded
+NOTE: > Executing update_pixbuf_cache intercept ...
+NOTE: Executing write_package_manifest ...
+DEBUG: Executing python function write_package_manifest
+DEBUG: Python function write_package_manifest finished
+NOTE: Executing license_create_manifest ...
+DEBUG: Executing shell function license_create_manifest
+WARNING: The license listed Firmware-bcm4329 was not in the licenses collected for linux-firmware
+WARNING: The license listed Firmware-bcm4330 was not in the licenses collected for linux-firmware
+DEBUG: Shell function license_create_manifest finished
+NOTE: Executing ssh_allow_empty_password ...
+DEBUG: Executing shell function ssh_allow_empty_password
+DEBUG: Shell function ssh_allow_empty_password finished
+NOTE: Executing postinst_enable_logging ...
+DEBUG: Executing shell function postinst_enable_logging
+DEBUG: Shell function postinst_enable_logging finished
+NOTE: Executing empty_var_volatile ...
+DEBUG: Executing shell function empty_var_volatile
+DEBUG: Shell function empty_var_volatile finished
+NOTE: Executing rootfs_update_timestamp ...
+DEBUG: Executing shell function rootfs_update_timestamp
+DEBUG: Shell function rootfs_update_timestamp finished
+NOTE: to be removed: base-passwd run-postinsts shadow update-rc.d
+NOTE: /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/bin/rpm -e --nodeps --root=/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs --dbpath=/var/lib/rpm --define='_cross_scriptlet_wrapper /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/scriptlet_wrapper' --define='_tmppath /oe_install/tmp' base-passwd run-postinsts shadow update-rc.d
+NOTE: update-alternatives: Linking /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/passwd to /bin/busybox.suid
+update-alternatives: removing /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/chfn as no more alternatives exist for it
+update-alternatives: removing /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/bin/chsh as no more alternatives exist for it
+update-alternatives: removing /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/usr/sbin/chpasswd as no more alternatives exist for it
+update-alternatives: removing /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/sbin/vipw as no more alternatives exist for it
+update-alternatives: removing /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/sbin/vigr as no more alternatives exist for it
+ Removing any system startup links for run-postinsts ...
+
+NOTE: Executing write_image_manifest ...
+DEBUG: Executing python function write_image_manifest
+DEBUG: Python function write_image_manifest finished
+NOTE: Executing: ldconfig -r/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs-c new -v
+WARNING: log_check: There is a warn message in the logfile
+WARNING: log_check: Matched keyword: [warn]
+WARNING: log_check: warning: group pulse does not exist - using root
+
+WARNING: log_check: There is a warn message in the logfile
+WARNING: log_check: Matched keyword: [warn]
+WARNING: log_check: warning: group pulse does not exist - using root
+
+WARNING: log_check: There is a warn message in the logfile
+WARNING: log_check: Matched keyword: [warn]
+WARNING: log_check: warning: group pulse does not exist - using root
+
+WARNING: log_check: There is a warn message in the logfile
+WARNING: log_check: Matched keyword: [warn]
+WARNING: log_check: warning: group pulse does not exist - using root
+
+WARNING: log_check: There is a warn message in the logfile
+WARNING: log_check: Matched keyword: [warn]
+WARNING: log_check: warning: group pulse does not exist - using root
+
+WARNING: log_check: There is a warn message in the logfile
+WARNING: log_check: Matched keyword: [warn]
+WARNING: log_check: warning: group pulse does not exist - using root
+
+WARNING: log_check: There is a warn message in the logfile
+WARNING: log_check: Matched keyword: [warn]
+WARNING: log_check: warning: group pulse does not exist - using root
+
+WARNING: log_check: There is a warn message in the logfile
+WARNING: log_check: Matched keyword: [warn]
+WARNING: log_check: warning: group pulse does not exist - using root
+
+WARNING: log_check: There is a warn message in the logfile
+WARNING: log_check: Matched keyword: [warn]
+WARNING: log_check: warning: group pulse does not exist - using root
+
+WARNING: log_check: There is a warn message in the logfile
+WARNING: log_check: Matched keyword: [warn]
+WARNING: log_check: warning: group pulse does not exist - using root
+
+WARNING: log_check: There is a warn message in the logfile
+WARNING: log_check: Matched keyword: [warn]
+WARNING: log_check: warning: group pulse does not exist - using root
+
+WARNING: log_check: There is a warn message in the logfile
+WARNING: log_check: Matched keyword: [warn]
+WARNING: log_check: warning: group pulse does not exist - using root
+
+WARNING: log_check: There is a warn message in the logfile
+WARNING: log_check: Matched keyword: [warn]
+WARNING: log_check: warning: group pulse does not exist - using root
+
+WARNING: log_check: There is a warn message in the logfile
+WARNING: log_check: Matched keyword: [warn]
+WARNING: log_check: warning: group pulse does not exist - using root
+
+WARNING: log_check: There is a warn message in the logfile
+WARNING: log_check: Matched keyword: [warn]
+WARNING: log_check: warning: group pulse does not exist - using root
+
+WARNING: log_check: There is a warn message in the logfile
+WARNING: log_check: Matched keyword: [warn]
+WARNING: log_check: warning: group pulse does not exist - using root
+
+WARNING: log_check: There is a warn message in the logfile
+WARNING: log_check: Matched keyword: [warn]
+WARNING: log_check: warning: group pulse does not exist - using root
+
+WARNING: log_check: There is a warn message in the logfile
+WARNING: log_check: Matched keyword: [WARNING:]
+WARNING: log_check: WARNING: The license listed Firmware-bcm4329 was not in the licenses collected for linux-firmware
+
+WARNING: log_check: There is a warn message in the logfile
+WARNING: log_check: Matched keyword: [WARNING:]
+WARNING: log_check: WARNING: The license listed Firmware-bcm4330 was not in the licenses collected for linux-firmware
+
+NOTE: ###### Generate images #######
+NOTE: Executing mklibs_optimize_image ...
+DEBUG: Executing shell function mklibs_optimize_image
+DEBUG: Shell function mklibs_optimize_image finished
+NOTE: Executing prelink_image ...
+DEBUG: Executing shell function prelink_image
+Size before prelinking 312140.
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /sbin/bootlogd: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /sbin/killall5: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /sbin/fstab-decode: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /sbin/sulogin.util-linux: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /sbin/runlevel.sysvinit: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /sbin/halt.sysvinit: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /sbin/shutdown.sysvinit: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /sbin/init.sysvinit: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /sbin/iwconfig: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/sbin/nl-cls-list: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/sbin/dhcpd: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/sbin/bluetoothd: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/sbin/bccmd: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/sbin/nl-class-add: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/sbin/alsactl: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/sbin/nl-qdisc-delete: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/sbin/hostapd_cli: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/sbin/wpa_cli: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/sbin/genl-ctrl-list: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/sbin/rpcbind: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/sbin/nl-cls-add: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/sbin/avahi-daemon: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/sbin/nl-cls-delete: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/sbin/hostapd: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/sbin/hciattach: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/sbin/nl-classid-lookup: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/sbin/hciemu: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/sbin/hciconfig: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/sbin/nl-class-delete: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/sbin/nl-qdisc-list: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/sbin/hostap_crypt_conf: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/sbin/hostap_io_debug: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/sbin/nl-qdisc-add: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/sbin/lspci: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/sbin/nl-link-list: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/sbin/wpa_supplicant: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/sbin/setpci: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/sbin/vsftpd: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/sbin/apmd: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/sbin/ofonod: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/sbin/prism2_srec: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/sbin/hostap_rid: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/sbin/rpcinfo: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/sbin/hostap_diag: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/sbin/nl-pktloc-lookup: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/sbin/nl-class-list: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /bin/mountpoint.sysvinit: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /bin/login.shadow: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /bin/bash: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /bin/busybox.suid: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /bin/kmod: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /bin/su.shadow: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /bin/busybox.nosuid: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/gst-discoverer-1.0: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/gst-xmllaunch-0.10: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/gst-device-monitor-1.0: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/contours: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/fc-scan: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/sdptool: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/motempl: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/glxcontexts: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/tri_screen: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/stream: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/wpa_passphrase: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/latentsvmdetect: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/par_ops: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/lat_sig: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/eglinfo-x11: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/pbinfo: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/bindtex: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/nfctool: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/dbus-cleanup-sockets: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/torus_x11: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/utmpdump.sysvinit: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/fc-match: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/sbcenc: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/pango-view: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/dlist_test: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/msleep: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/nettle-lfib-stream: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/gst-typefind-0.10: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/lat_mmap: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/mpicalc: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/glxdemo: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/fc-list: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/drawtex_x11: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/glmark2: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/lat_udp: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/gst-launch: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/gst-typefind: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/sharedtex: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/dbus-monitor: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/pyramid_segmentation: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/lat_ctx: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/get_module: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/media-ctl: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/eglretrace: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/l2test: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/glsync: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/gplay: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/glxheads: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/fc-query: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/sbcdec: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/gst-launch-1.0: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/es2gears_screen: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/bgfg_codebook: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/delaunay: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/gst-xmllaunch: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/find_obj_ferns: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/glxgears_pixmap: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/nano: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/glxsnoop: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/get_driver: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/bw_mem: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/fc-pattern: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/lat_unix: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/gst-xmlinspect: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/lat_tcp: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/xfont: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/dbus-daemon: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/fback_c: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/lat_pagefault: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/fc-cache: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/convert_cascade: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/gmem_info: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/glxswapcontrol: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/gst-play-1.0: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/proxy: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/lat_http: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/gconftool-2: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/glretrace: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/gst-inspect-0.10: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/lat_fs: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/nettle-hash: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/udevadm: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/blobtrack_sample: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/gdk-pixbuf-query-loaders: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/perl5.20.0: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/lat_sem: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/eglfbdev: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/dbus-launch: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/tlb: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/dbus-send: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/gears_x11: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/msaa: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/bw_file_rd: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/es1_info: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/glxgears: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/glxgears_fbconfig: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/lat_fifo: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/hcitool: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/gst-launch-0.10: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/ciptool: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/glxinfo: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/gsettings-data-convert: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/pbuffer: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/usbhid-dump: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/gtk-query-immodules-2.0: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/mesg.sysvinit: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/bw_tcp: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/lat_mem_rd: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/update-mime-database: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/lat_rpc: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/clear: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/lsusb: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/dfutool: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/gst-inspect-1.0: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/get_device: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/es2gears_x11: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/iperf: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/morphology: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/two_win: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/glmark2-es2: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/loop_o: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/glxpixmap: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/drawtex_screen: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/mhz: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/lat_syscall: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/gdb: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/lat_pipe: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/screen-4.0.3: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/bw_pipe: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/corender: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/gtk-update-icon-cache-2.0: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/brcm_patchram_plus: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/python2.7: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/sexp-conv: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/xrotfontdemo: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/torus_screen: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/xmllint: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/fc-cat: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/rctest: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/lmhttp: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/lat_fcntl: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/lat_select: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/fc-validate: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/timing_o: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/shape: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/enough: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/offset: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/multictx: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/strace: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/es2tri: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/autohdmi: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/openssl: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/csslint-0.6: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/bw_mmap_rd: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/sbcinfo: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/polar_transforms: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/gdk-pixbuf-pixdata: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/overlay: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/find_obj_calonder: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/one_way_sample: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/manywin: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/wincopy: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/dbus-run-session: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/flushdisk: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/bw_unix: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/gst-inspect: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/gst-xmlinspect-0.10: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/lat_connect: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/hello: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/groups.shadow: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/glxpbdemo: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/l2ping: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/texture_from_pixmap: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/gatttool: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/pkcs1-conv: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/lat_proc: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/facedetect: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/render_tex: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/newgrp.shadow: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/web_server: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/tree_engine: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/dbus-uuidgen: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/lat_ops: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/lmdd: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/xmlcatalog: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/mushroom: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/alsamixer: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/pbdemo: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/gst-feedback: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/wall.sysvinit: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/last.sysvinit: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/gears_screen: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/disk: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/systool: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/apm: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/lm_line: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/gdbserver: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/smiledetect: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/gconf-merge-tree: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/es2_info: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/par_mem: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/gst-typefind-1.0: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/rfcomm: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/mser_sample: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/sharedtex_mt: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/glthreads: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/gst-discoverer-0.10: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/tri_x11: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/memsize: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/find_obj: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/adaptiveskindetector: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/pango-querymodules: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/apitrace: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/bin/lat_unix_connect: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /lib/udev/accelerometer: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /lib/udev/udevd: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /lib/udev/hid2hci: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /lib/udev/collect: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /lib/udev/keymap: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /lib/udev/mtd_probe: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /lib/udev/ata_id: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /lib/udev/cdrom_id: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /lib/udev/v4l_id: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /lib/udev/scsi_id: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/lib/libv4l/ov511-decomp: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/lib/libv4l/ov518-decomp: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/lib/dbus/dbus-daemon-launch-helper: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/lib/neard/nfctool: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/lib/neard/nfc/neard: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/lib/gstreamer/gstreamer-0.10/gst-plugin-scanner: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/lib/libproxy/pxgsettings: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/lib/gconf/gconfd-2: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin/prelink: /usr/lib/gstreamer1.0/gstreamer-1.0/gst-plugin-scanner: Using /lib/ld-linux-armhf.so.3, not /lib/ld-linux.so.3 as dynamic linker
+Size after prelinking 312140.
+DEBUG: Shell function prelink_image finished
+NOTE: The image creation groups are: [['ext3', 'tar'], ['sdcard']]
+NOTE: Running image creation script for ext3: /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/temp/create_image.ext3 ...
+NOTE: Running image creation script for tar: /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/temp/create_image.tar ...
+NOTE: Creating symlinks for ext3 image ...
+NOTE: Creating symlink: core-image-wvsnp-minimal-wandboard-dual.ext3 -> core-image-wvsnp-minimal-wandboard-dual-20160922003828.rootfs.ext3
+NOTE: Creating symlinks for tar image ...
+NOTE: Creating symlink: core-image-wvsnp-minimal-wandboard-dual.tar.bz2 -> core-image-wvsnp-minimal-wandboard-dual-20160922003828.rootfs.tar.bz2
+NOTE: Running image creation script for sdcard: /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/temp/create_image.sdcard ...
+NOTE: Creating symlinks for sdcard image ...
+NOTE: Creating symlink: core-image-wvsnp-minimal-wandboard-dual.sdcard -> core-image-wvsnp-minimal-wandboard-dual-20160922003828.rootfs.sdcard
+DEBUG: Python function do_rootfs finished

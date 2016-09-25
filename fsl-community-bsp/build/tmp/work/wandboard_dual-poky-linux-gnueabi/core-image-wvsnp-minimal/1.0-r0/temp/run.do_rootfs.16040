@@ -1,0 +1,16 @@
+def do_rootfs(d):
+    from oe.rootfs import create_rootfs
+    from oe.image import create_image
+    from oe.manifest import create_manifest
+
+    # generate the initial manifest
+    create_manifest(d)
+
+    # generate rootfs
+    create_rootfs(d)
+
+    # generate final images
+    create_image(d)
+
+do_rootfs(d)
+

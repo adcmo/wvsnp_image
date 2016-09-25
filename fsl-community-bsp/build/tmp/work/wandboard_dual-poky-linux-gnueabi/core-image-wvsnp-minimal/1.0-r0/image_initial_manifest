@@ -1,0 +1,36 @@
+# This file was generated automatically and contains the packages
+# passed on to the package manager in order to create the rootfs.
+
+# Format:
+#  <package_type>,<package_name>
+# where:
+#   <package_type> can be:
+#      'mip' = must install package
+#      'aop' = attempt only package
+#      'mlp' = multilib package
+#      'lgp' = language package
+
+mip,wvsnp-startupscripts
+mip,packagegroup-fsl-gstreamer-full
+mip,packagegroup-fslc-gstreamer1.0
+mip,vsftpd
+mip,libxbee
+mip,libmongoose
+mip,nano
+mip,packagegroup-core-boot
+mip,packagegroup-fslc-gstreamer1.0-full
+mip,libx264-133
+mip,btpkg
+mip,screen
+mip,packagegroup-fsl-tools-gpu-external
+mip,packagegroup-fsl-gstreamer
+mip,bash
+mip,packagegroup-fsl-tools-gpu
+mip,run-postinsts
+mip,openssh
+mip,packagegroup-core-tools-debug
+mip,packagegroup-wandboard-ap-test
+mip,imx-test
+mip,packagegroup-base-extended
+lgp,locale-base-en-us
+lgp,locale-base-en-gb
