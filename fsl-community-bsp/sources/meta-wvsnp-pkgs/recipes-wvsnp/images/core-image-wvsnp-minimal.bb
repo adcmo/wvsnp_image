@@ -18,8 +18,10 @@ IMAGE_FEATURES += " \
 CORE_IMAGE_EXTRA_INSTALL += " \
     wvsnp-startupscripts \
     btpkg \
-    packagegroup-fsl-gstreamer1.0 \
-    packagegroup-fsl-gstreamer1.0-full \
+    packagegroup-fsl-gstreamer \
+    packagegroup-fsl-gstreamer-full \
+    packagegroup-fslc-gstreamer1.0 \
+    packagegroup-fslc-gstreamer1.0-full \
     packagegroup-fsl-tools-gpu \
     packagegroup-fsl-tools-gpu-external \
     packagegroup-wandboard-ap-test \
