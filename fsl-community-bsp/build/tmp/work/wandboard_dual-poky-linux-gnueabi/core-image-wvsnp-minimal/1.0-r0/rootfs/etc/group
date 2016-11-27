@@ -39,9 +39,9 @@ games:x:60:
 shutdown:x:70:
 users:x:100:
 nogroup:x:65534:
-ftp:x:999:
-rpc:x:998:
-avahi:x:997:
+rpc:x:999:
+avahi:x:998:
+ftp:x:997:
 sshd:x:996:
 netdev:x:995:
 messagebus:x:994:

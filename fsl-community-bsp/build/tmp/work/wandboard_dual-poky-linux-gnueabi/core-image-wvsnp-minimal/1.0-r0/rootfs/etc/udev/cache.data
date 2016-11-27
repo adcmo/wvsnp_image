@@ -1,5 +1,5 @@
-Linux version 3.14.28_1.0.0_ga-wandboard+g08f5291 (carl@mort) (gcc version 4.9.2 (GCC) ) #1 SMP PREEMPT Wed Sep 21 15:47:49 MST 2016
-console=ttymxc0,115200 root=/dev/nfs ip=dhcp nfsroot=10.1.2.186:/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs/,v3,tcp
+Linux version 3.14.28_1.0.0_ga-wandboard+g08f5291 (carl@LadyYsabell) (gcc version 4.9.2 (GCC) ) #1 SMP PREEMPT Thu Oct 20 01:41:41 MST 2016
+console=ttymxc0,115200 root=/dev/nfs ip=dhcp nfsroot=10.1.2.101:/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs,v3,tcp
 Character devices:
   1 mem
   4 /dev/vc/0
@@ -55,25 +55,25 @@ Block devices:
 134 sd
 135 sd
 179 mmc
-3025 1474498677 lib 42-usb-hid-pm.rules
-3652 1474498677 lib 50-udev-default.rules
-646 1474498677 lib 60-cdrom_id.rules
-616 1474498677 lib 60-persistent-alsa.rules
-2400 1474498677 lib 60-persistent-input.rules
-947 1474498677 lib 60-persistent-serial.rules
-1420 1474498677 lib 60-persistent-storage-tape.rules
-5622 1474498677 lib 60-persistent-storage.rules
-769 1474498677 lib 60-persistent-v4l.rules
-166 1474498677 lib 61-accelerometer.rules
-570 1474498677 lib 75-net-description.rules
-255 1474498677 lib 75-probe_mtd.rules
-570 1474498677 lib 75-tty-description.rules
-4174 1474498677 lib 78-sound-card.rules
-565 1474498677 lib 80-drivers.rules
-399 1474501722 lib 90-alsa-restore.rules
-3328 1474498677 lib 95-keyboard-force-release.rules
-11644 1474498677 lib 95-keymap.rules
-155 1474498677 lib 95-udev-late.rules
-1356 1474498849 lib 97-bluetooth-hid2hci.rules
-1449 1474502147 etc 10-imx.rules
-885 1474498678 etc local.rules
+3025 1476951987 lib 42-usb-hid-pm.rules
+3652 1476951987 lib 50-udev-default.rules
+646 1476951987 lib 60-cdrom_id.rules
+616 1476951987 lib 60-persistent-alsa.rules
+2400 1476951987 lib 60-persistent-input.rules
+947 1476951987 lib 60-persistent-serial.rules
+1420 1476951987 lib 60-persistent-storage-tape.rules
+5622 1476951987 lib 60-persistent-storage.rules
+769 1476951987 lib 60-persistent-v4l.rules
+166 1476951987 lib 61-accelerometer.rules
+570 1476951987 lib 75-net-description.rules
+255 1476951987 lib 75-probe_mtd.rules
+570 1476951987 lib 75-tty-description.rules
+4174 1476951987 lib 78-sound-card.rules
+565 1476951987 lib 80-drivers.rules
+399 1476957231 lib 90-alsa-restore.rules
+3328 1476951987 lib 95-keyboard-force-release.rules
+11644 1476951987 lib 95-keymap.rules
+155 1476951987 lib 95-udev-late.rules
+1356 1476952907 lib 97-bluetooth-hid2hci.rules
+1449 1476958159 etc 10-imx.rules
+885 1476951988 etc local.rules

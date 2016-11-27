@@ -12,4 +12,4 @@ PSEUDO_UNLOAD=1 qemuwrapper -L $D -E LD_LIBRARY_PATH=$D/${libdir}:$D/${base_libd
     sed -i -e "s:$D::g" $GDK_PIXBUF_MODULEDIR/../loaders.cache
 
 
-##PKGS: gdk-pixbuf-loader-xpm gdk-pixbuf-loader-png gdk-pixbuf-loader-jpeg gdk-pixbuf-loader-gif 
+##PKGS: gdk-pixbuf-loader-jpeg gdk-pixbuf-loader-png gdk-pixbuf-loader-gif gdk-pixbuf-loader-xpm 

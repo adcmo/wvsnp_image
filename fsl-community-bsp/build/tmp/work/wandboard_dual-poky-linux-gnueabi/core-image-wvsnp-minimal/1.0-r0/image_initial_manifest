@@ -27,6 +27,7 @@ mip,packagegroup-fsl-gstreamer
 mip,bash
 mip,packagegroup-fsl-tools-gpu
 mip,run-postinsts
+mip,ffmpeg
 mip,openssh
 mip,packagegroup-core-tools-debug
 mip,packagegroup-wandboard-ap-test

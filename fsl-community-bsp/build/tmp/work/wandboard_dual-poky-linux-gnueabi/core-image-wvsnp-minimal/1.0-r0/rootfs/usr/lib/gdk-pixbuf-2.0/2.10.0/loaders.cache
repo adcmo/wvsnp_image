@@ -4,17 +4,17 @@
 #
 # LoaderDir = /usr/lib/gdk-pixbuf-2.0/2.10.0/loaders
 #
-"/usr/lib/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-jpeg.so"
-"jpeg" 5 "gdk-pixbuf" "The JPEG image format" "LGPL"
-"image/jpeg" ""
-"jpeg" "jpe" "jpg" ""
-"\377\330" "" 100
-
 "/usr/lib/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-xpm.so"
 "xpm" 4 "gdk-pixbuf" "The XPM image format" "LGPL"
 "image/x-xpixmap" ""
 "xpm" ""
 "/* XPM */" "" 100
+
+"/usr/lib/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-jpeg.so"
+"jpeg" 5 "gdk-pixbuf" "The JPEG image format" "LGPL"
+"image/jpeg" ""
+"jpeg" "jpe" "jpg" ""
+"\377\330" "" 100
 
 "/usr/lib/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader-gif.so"
 "gif" 4 "gdk-pixbuf" "The GIF image format" "LGPL"

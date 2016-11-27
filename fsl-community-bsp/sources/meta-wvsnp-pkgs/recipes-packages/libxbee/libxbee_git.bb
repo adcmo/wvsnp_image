@@ -30,5 +30,6 @@ do_compile() {
 
 do_install () {
 	mkdir -p ${D}/usr/share/man/man3
+	install -m 0755 ${S}/*.h ${D}${includedir}
 	oe_runmake install SYS_ROOT=${D}
 }

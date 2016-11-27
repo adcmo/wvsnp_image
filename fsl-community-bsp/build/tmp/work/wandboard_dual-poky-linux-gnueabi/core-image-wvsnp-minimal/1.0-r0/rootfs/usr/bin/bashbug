@@ -29,7 +29,7 @@
 MACHINE="arm"
 OS="linux-gnueabi"
 CC="arm-poky-linux-gnueabi-gcc  -march=armv7-a -marm  -mthumb-interwork -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot="
-CFLAGS=" -DPROGRAM='bash' -DCONF_HOSTTYPE='arm' -DCONF_OSTYPE='linux-gnueabi' -DCONF_MACHTYPE='arm-poky-linux-gnueabi' -DCONF_VENDOR='poky' -DLOCALEDIR='/usr/share/locale' -DPACKAGE='bash' -DSHELL -DHAVE_CONFIG_H   -I.  -I/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/cortexa9hf-vfp-neon-poky-linux-gnueabi/bash/4.3-r1/bash-4.3 -I/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/cortexa9hf-vfp-neon-poky-linux-gnueabi/bash/4.3-r1/bash-4.3/include -I/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/cortexa9hf-vfp-neon-poky-linux-gnueabi/bash/4.3-r1/bash-4.3/lib   -O2 -pipe -g -feliminate-unused-debug-types"
+CFLAGS=" -DPROGRAM='bash' -DCONF_HOSTTYPE='arm' -DCONF_OSTYPE='linux-gnueabi' -DCONF_MACHTYPE='arm-poky-linux-gnueabi' -DCONF_VENDOR='poky' -DLOCALEDIR='/usr/share/locale' -DPACKAGE='bash' -DSHELL -DHAVE_CONFIG_H   -I.  -I/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/work/cortexa9hf-vfp-neon-poky-linux-gnueabi/bash/4.3-r1/bash-4.3 -I/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/work/cortexa9hf-vfp-neon-poky-linux-gnueabi/bash/4.3-r1/bash-4.3/include -I/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/work/cortexa9hf-vfp-neon-poky-linux-gnueabi/bash/4.3-r1/bash-4.3/lib   -O2 -pipe -g -feliminate-unused-debug-types"
 RELEASE="4.3"
 PATCHLEVEL="30"
 RELSTATUS="release"

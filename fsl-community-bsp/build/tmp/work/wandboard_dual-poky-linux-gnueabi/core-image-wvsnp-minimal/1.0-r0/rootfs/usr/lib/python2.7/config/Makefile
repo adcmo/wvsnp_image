@@ -26,10 +26,10 @@ MODLIBS=        $(LOCALMODLIBS) $(BASEMODLIBS)
 
 # === Variables set by configure
 VERSION=	2.7
-srcdir=		/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/cortexa9hf-vfp-neon-poky-linux-gnueabi/python/2.7.9-r1/Python-2.7.9
-VPATH=		/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/cortexa9hf-vfp-neon-poky-linux-gnueabi/python/2.7.9-r1/Python-2.7.9
-abs_srcdir=	/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/cortexa9hf-vfp-neon-poky-linux-gnueabi/python/2.7.9-r1/Python-2.7.9
-abs_builddir=	/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/cortexa9hf-vfp-neon-poky-linux-gnueabi/python/2.7.9-r1/build
+srcdir=		/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/work/cortexa9hf-vfp-neon-poky-linux-gnueabi/python/2.7.9-r1/Python-2.7.9
+VPATH=		/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/work/cortexa9hf-vfp-neon-poky-linux-gnueabi/python/2.7.9-r1/Python-2.7.9
+abs_srcdir=	/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/work/cortexa9hf-vfp-neon-poky-linux-gnueabi/python/2.7.9-r1/Python-2.7.9
+abs_builddir=	/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/work/cortexa9hf-vfp-neon-poky-linux-gnueabi/python/2.7.9-r1/build
 build=		x86_64-pc-linux-gnu
 host=		arm-poky-linux-gnueabi
 
@@ -39,7 +39,7 @@ MAINCC=		$(CC)
 LINKCC=		$(PURIFY) $(MAINCC)
 AR=		arm-poky-linux-gnueabi-ar
 RANLIB=		arm-poky-linux-gnueabi-ranlib
-SVNVERSION=	svnversion $(srcdir)
+SVNVERSION=	echo Unversioned directory
 HGVERSION=	
 HGTAG=		
 HGBRANCH=	
@@ -247,7 +247,7 @@ GRAMMAR_C=	Python/graminit.c
 GRAMMAR_INPUT=	$(srcdir)/Grammar/Grammar
 
 
-LIBFFI_INCLUDEDIR=	/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/wandboard-dual/usr/lib/libffi-3.2.1/include
+LIBFFI_INCLUDEDIR=	/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/wandboard-dual/usr/lib/libffi-3.2.1/include
 
 ##########################################################################
 # Parser

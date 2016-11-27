@@ -15,7 +15,7 @@ bb_exit_handler() {
 }
 trap 'bb_exit_handler' 0
 set -e
-export ROOTFS_SIZE=409600
+export ROOTFS_SIZE=413696
 export prefix="/usr"
 export STRIP="arm-poky-linux-gnueabi-strip"
 export USER="carl"
@@ -23,33 +23,33 @@ export libexecdir="/usr/lib/core-image-wvsnp-minimal"
 export datadir="/usr/share"
 export localstatedir="/var"
 export BUILD_CXX="g++ "
-export LD="arm-poky-linux-gnueabi-ld --sysroot=/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/wandboard-dual "
+export LD="arm-poky-linux-gnueabi-ld --sysroot=/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/wandboard-dual "
 export bindir="/usr/bin"
 export TARGET_CXXFLAGS=" -O2 -pipe -g -feliminate-unused-debug-types"
 export BUILD_CC="gcc "
-export BUILD_LDFLAGS="-L/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/lib -L/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/lib -Wl,-rpath-link,/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/lib -Wl,-rpath-link,/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/lib -Wl,-rpath,/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/lib -Wl,-rpath,/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/lib -Wl,-O1"
+export BUILD_LDFLAGS="-L/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/lib -L/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/lib -Wl,-rpath-link,/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/lib -Wl,-rpath-link,/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/lib -Wl,-rpath,/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/lib -Wl,-rpath,/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/lib -Wl,-O1"
 unset TARGET_ARCH
 export STRINGS="arm-poky-linux-gnueabi-strings"
 export CCACHE_DIR="/home/carl"
 export BUILD_LD="ld "
 export oldincludedir="/usr/include"
-export PSEUDO_PREFIX="/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr"
+export PSEUDO_PREFIX="/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr"
 export BUILD_CCLD="gcc "
 export PSEUDO_DISABLED="0"
-export BUILD_CFLAGS="-isystem/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/include -O2 -pipe"
-export PSEUDO_LOCALSTATEDIR="/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/pseudo/"
+export BUILD_CFLAGS="-isystem/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/include -O2 -pipe"
+export PSEUDO_LOCALSTATEDIR="/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/pseudo/"
 export docdir="/usr/share/doc"
 export infodir="/usr/share/info"
-export CC="arm-poky-linux-gnueabi-gcc  -march=armv7-a -marm  -mthumb-interwork -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/wandboard-dual"
+export CC="arm-poky-linux-gnueabi-gcc  -march=armv7-a -marm  -mthumb-interwork -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/wandboard-dual"
 export TARGET_LDFLAGS="-Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed"
 export ARCH="arm"
 export TERM="xterm-256color"
 export RANLIB="arm-poky-linux-gnueabi-ranlib"
 export CPPFLAGS=""
 export base_sbindir="/sbin"
-export CXX="arm-poky-linux-gnueabi-g++  -march=armv7-a -marm  -mthumb-interwork -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/wandboard-dual"
+export CXX="arm-poky-linux-gnueabi-g++  -march=armv7-a -marm  -mthumb-interwork -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/wandboard-dual"
 export systemd_unitdir="/lib/systemd"
-export FC="arm-poky-linux-gnueabi-gfortran  -march=armv7-a -marm  -mthumb-interwork -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/wandboard-dual"
+export FC="arm-poky-linux-gnueabi-gfortran  -march=armv7-a -marm  -mthumb-interwork -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/wandboard-dual"
 export HOME="/home/carl"
 export BUILD_RANLIB="ranlib"
 export BUILD_FC="gfortran "
@@ -57,29 +57,29 @@ export BUILD_NM="nm"
 export PSEUDO_NOSYMLINKEXP="1"
 export AS="arm-poky-linux-gnueabi-as "
 export AR="arm-poky-linux-gnueabi-ar"
-export BUILD_CPPFLAGS="-isystem/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/include"
+export BUILD_CPPFLAGS="-isystem/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/include"
 export BUILD_AR="ar"
-export CPP="arm-poky-linux-gnueabi-gcc -E --sysroot=/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/wandboard-dual  -march=armv7-a -marm  -mthumb-interwork -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9"
+export CPP="arm-poky-linux-gnueabi-gcc -E --sysroot=/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/wandboard-dual  -march=armv7-a -marm  -mthumb-interwork -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9"
 export mandir="/usr/share/man"
 export sharedstatedir="/com"
-export PKG_CONFIG_SYSROOT_DIR="/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/wandboard-dual"
-export BUILD_CXXFLAGS="-isystem/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/include -O2 -pipe"
+export PKG_CONFIG_SYSROOT_DIR="/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/wandboard-dual"
+export BUILD_CXXFLAGS="-isystem/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/include -O2 -pipe"
 export OBJCOPY="arm-poky-linux-gnueabi-objcopy"
 export CCACHE_DISABLE="1"
 export servicedir="/srv"
-export PKG_CONFIG_PATH="/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/wandboard-dual/usr/lib/pkgconfig:/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/wandboard-dual/usr/share/pkgconfig"
+export PKG_CONFIG_PATH="/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/wandboard-dual/usr/lib/pkgconfig:/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/wandboard-dual/usr/share/pkgconfig"
 export LC_ALL="C"
 export TARGET_CPPFLAGS=""
-export PKG_CONFIG_DIR="/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/wandboard-dual/usr/lib/pkgconfig"
+export PKG_CONFIG_DIR="/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/wandboard-dual/usr/lib/pkgconfig"
 export LDFLAGS="-Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed"
 export sysconfdir="/etc"
-export CCLD="arm-poky-linux-gnueabi-gcc  -march=armv7-a -marm  -mthumb-interwork -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/wandboard-dual"
+export CCLD="arm-poky-linux-gnueabi-gcc  -march=armv7-a -marm  -mthumb-interwork -mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 --sysroot=/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/wandboard-dual"
 export base_libdir="/lib"
-export PATH="/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/bin/python-native:/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/bin/python-native:/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/bin/pigz-native:/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/bin/gzip-native:/home/carl/wvsnp_image/fsl-community-bsp/sources/poky/scripts:/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/bin/arm-poky-linux-gnueabi:/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/wandboard-dual/usr/bin/crossscripts:/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin:/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/bin:/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/sbin:/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/bin:/home/carl/wvsnp_image/fsl-community-bsp/sources/poky/scripts:/home/carl/wvsnp_image/fsl-community-bsp/sources/poky/bitbake/bin:/home/carl/bin:/home/carl/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
+export PATH="/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/bin/python-native:/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/bin/python-native:/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/bin/pigz-native:/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/bin/gzip-native:/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/sources/poky/scripts:/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/bin/arm-poky-linux-gnueabi:/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/wandboard-dual/usr/bin/crossscripts:/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/sbin:/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/usr/bin:/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/sbin:/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux/bin:/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/sources/poky/scripts:/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/sources/poky/bitbake/bin:/home/carl/bin:/home/carl/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
 export TARGET_CFLAGS=" -O2 -pipe -g -feliminate-unused-debug-types"
 export base_bindir="/bin"
 export includedir="/usr/include"
-export PKG_CONFIG_LIBDIR="/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/wandboard-dual/usr/lib/pkgconfig"
+export PKG_CONFIG_LIBDIR="/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/wandboard-dual/usr/lib/pkgconfig"
 unset MACHINE
 export sbindir="/usr/sbin"
 export CFLAGS=" -O2 -pipe -g -feliminate-unused-debug-types"
@@ -91,7 +91,7 @@ export PKG_CONFIG_DISABLE_UNINSTALLED="yes"
 export libdir="/usr/lib"
 export nonarch_base_libdir="/lib"
 export SHELL="/bin/bash"
-export PSEUDO_PASSWD="/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs:/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux"
+export PSEUDO_PASSWD="/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs:/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/sysroots/x86_64-linux"
 export MAKE="make"
 export BUILD_CPP="gcc  -E"
 export PATCH_GET="0"
@@ -101,10 +101,10 @@ export LOGNAME="carl"
 export UBOOT_ARCH="arm"
 export base_prefix=""
 export BUILD_STRIP="strip"
-export PACKAGE_INSTALL="wvsnp-startupscripts packagegroup-fsl-gstreamer-full packagegroup-fslc-gstreamer1.0 vsftpd libxbee libmongoose nano packagegroup-core-boot packagegroup-fslc-gstreamer1.0-full libx264-133 btpkg screen packagegroup-fsl-tools-gpu-external packagegroup-fsl-gstreamer bash packagegroup-fsl-tools-gpu run-postinsts openssh packagegroup-core-tools-debug packagegroup-wandboard-ap-test imx-test packagegroup-base-extended"
+export PACKAGE_INSTALL="wvsnp-startupscripts packagegroup-fsl-gstreamer-full packagegroup-fslc-gstreamer1.0 vsftpd libxbee libmongoose nano packagegroup-core-boot packagegroup-fslc-gstreamer1.0-full libx264-133 btpkg screen packagegroup-fsl-tools-gpu-external packagegroup-fsl-gstreamer bash packagegroup-fsl-tools-gpu run-postinsts ffmpeg openssh packagegroup-core-tools-debug packagegroup-wandboard-ap-test imx-test packagegroup-base-extended"
 img_creation_func() {
 	oe_mkext234fs ext3 -i 4096
-	cd /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/deploy/images/wandboard-dual
+	cd /home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/deploy/images/wandboard-dual
 }
 
 oe_mkext234fs() {
@@ -117,8 +117,8 @@ oe_mkext234fs() {
 	fi
 
 	# Create a sparse image block
-	dd if=/dev/zero of=/home/carl/wvsnp_image/fsl-community-bsp/build/tmp/deploy/images/wandboard-dual/core-image-wvsnp-minimal-wandboard-dual-20160922003828.rootfs.$fstype seek=$ROOTFS_SIZE count=0 bs=1k
-	mkfs.$fstype -F $extra_imagecmd /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/deploy/images/wandboard-dual/core-image-wvsnp-minimal-wandboard-dual-20160922003828.rootfs.$fstype -d /home/carl/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs
+	dd if=/dev/zero of=/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/deploy/images/wandboard-dual/core-image-wvsnp-minimal-wandboard-dual-20161117204202.rootfs.$fstype seek=$ROOTFS_SIZE count=0 bs=1k
+	mkfs.$fstype -F $extra_imagecmd /home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/deploy/images/wandboard-dual/core-image-wvsnp-minimal-wandboard-dual-20161117204202.rootfs.$fstype -d /home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs
 
 }
 

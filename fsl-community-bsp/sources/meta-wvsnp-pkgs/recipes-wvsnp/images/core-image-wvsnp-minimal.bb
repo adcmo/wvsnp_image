@@ -32,6 +32,8 @@ CORE_IMAGE_EXTRA_INSTALL += " \
     imx-test \
     x264 \
     nano \
+    ffmpeg \
     libxbee \
     libmongoose \
 "
+IMAGE_INSTALL_remove = "libav"

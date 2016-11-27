@@ -39,8 +39,8 @@ games:*::
 shutdown:*::
 users:*::
 nogroup:*::
-ftp:!::
 rpc:!::
 avahi:!::
+ftp:!::
 sshd:!::
 netdev:!::

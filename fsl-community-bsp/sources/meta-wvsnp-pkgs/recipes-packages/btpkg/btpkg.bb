@@ -2,11 +2,11 @@ SUMMARY = "Copies bluetooth scripts and firmware"
 DESCRIPTION = "BTPKG"
 HOMEPAGE = ""
 LICENSE = "CLOSED"
-MY_FILES = "/home/carl/fsl-community-bsp/sources/meta-wvsnp-pkgs/recipes-packages/btpkg/files/brcm_patchram_plus \
-/home/carl/fsl-community-bsp/sources/meta-wvsnp-pkgs/recipes-packages/btpkg/files/simple-agent \
+MY_FILES = "${BSPDIR}/sources/meta-wvsnp-pkgs/recipes-packages/btpkg/files/brcm_patchram_plus \
+${BSPDIR}/sources/meta-wvsnp-pkgs/recipes-packages/btpkg/files/simple-agent \
 "
 
-MY_FILES1 = "/home/carl/fsl-community-bsp/sources/meta-wvsnp-pkgs/recipes-packages/btpkg/files/bcm4330.hcd \
+MY_FILES1 = "${BSPDIR}/sources/meta-wvsnp-pkgs/recipes-packages/btpkg/files/bcm4330.hcd \
 "
 
 do_install() {

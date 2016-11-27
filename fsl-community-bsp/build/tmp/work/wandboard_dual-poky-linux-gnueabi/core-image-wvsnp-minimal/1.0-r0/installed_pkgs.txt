@@ -22,6 +22,7 @@ dbus-1 cortexa9hf-vfp-neon
 dhcp-server cortexa9hf-vfp-neon
 dhcp-server-config cortexa9hf-vfp-neon
 eglinfo-x11 cortexa9hf-vfp-neon-mx6qdl
+ffmpeg cortexa9hf-vfp-neon
 firmware-imx-vpu-imx6d cortexa9hf-vfp-neon-mx6qdl
 fontconfig-utils cortexa9hf-vfp-neon
 fsl-alsa-plugins wandboard_dual
@@ -502,9 +503,11 @@ libasound2 cortexa9hf-vfp-neon-mx6qdl
 libatk-1.0-0 cortexa9hf-vfp-neon
 libavahi-common3 cortexa9hf-vfp-neon
 libavahi-core7 cortexa9hf-vfp-neon
-libavcodec54 cortexa9hf-vfp-neon
-libavformat54 cortexa9hf-vfp-neon
-libavutil52 cortexa9hf-vfp-neon
+libavcodec56 cortexa9hf-vfp-neon
+libavdevice56 cortexa9hf-vfp-neon
+libavfilter5 cortexa9hf-vfp-neon
+libavformat56 cortexa9hf-vfp-neon
+libavutil54 cortexa9hf-vfp-neon
 libblkid1 cortexa9hf-vfp-neon
 libbz2-0 cortexa9hf-vfp-neon
 libc6 cortexa9hf-vfp-neon
@@ -633,6 +636,7 @@ libperl5 cortexa9hf-vfp-neon
 libpixman-1-0 cortexa9hf-vfp-neon
 libpng12 cortexa9hf-vfp-neon
 libpng16-16 cortexa9hf-vfp-neon
+libpostproc53 cortexa9hf-vfp-neon
 libproxy cortexa9hf-vfp-neon
 libpulse0 cortexa9hf-vfp-neon-mx6qdl
 libpulsecommon cortexa9hf-vfp-neon-mx6qdl
@@ -646,7 +650,8 @@ libsoup-2.4 cortexa9hf-vfp-neon
 libsqlite3-0 cortexa9hf-vfp-neon
 libssl1.0.0 cortexa9hf-vfp-neon
 libstdc++6 cortexa9hf-vfp-neon
-libswscale2 cortexa9hf-vfp-neon
+libswresample1 cortexa9hf-vfp-neon
+libswscale3 cortexa9hf-vfp-neon
 libsysfs2 cortexa9hf-vfp-neon
 libtag1 cortexa9hf-vfp-neon
 libtheora cortexa9hf-vfp-neon
