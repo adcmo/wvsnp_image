@@ -32,6 +32,7 @@ mip,openssh
 mip,packagegroup-core-tools-debug
 mip,packagegroup-wandboard-ap-test
 mip,imx-test
+mip,wvsnp-dashboard
 mip,packagegroup-base-extended
 lgp,locale-base-en-us
 lgp,locale-base-en-gb

@@ -15,7 +15,7 @@ bb_exit_handler() {
 }
 trap 'bb_exit_handler' 0
 set -e
-export ROOTFS_SIZE=413696
+export ROOTFS_SIZE=1454080
 export prefix="/usr"
 export STRIP="arm-poky-linux-gnueabi-strip"
 export USER="carl"
@@ -101,12 +101,12 @@ export LOGNAME="carl"
 export UBOOT_ARCH="arm"
 export base_prefix=""
 export BUILD_STRIP="strip"
-export PACKAGE_INSTALL="wvsnp-startupscripts packagegroup-fsl-gstreamer-full packagegroup-fslc-gstreamer1.0 vsftpd libxbee libmongoose nano packagegroup-core-boot packagegroup-fslc-gstreamer1.0-full libx264-133 btpkg screen packagegroup-fsl-tools-gpu-external packagegroup-fsl-gstreamer bash packagegroup-fsl-tools-gpu run-postinsts ffmpeg openssh packagegroup-core-tools-debug packagegroup-wandboard-ap-test imx-test packagegroup-base-extended"
+export PACKAGE_INSTALL="wvsnp-startupscripts packagegroup-fsl-gstreamer-full packagegroup-fslc-gstreamer1.0 vsftpd libxbee libmongoose nano packagegroup-core-boot packagegroup-fslc-gstreamer1.0-full libx264-133 btpkg screen packagegroup-fsl-tools-gpu-external packagegroup-fsl-gstreamer bash packagegroup-fsl-tools-gpu run-postinsts ffmpeg openssh packagegroup-core-tools-debug packagegroup-wandboard-ap-test imx-test wvsnp-dashboard packagegroup-base-extended"
 img_creation_func() {
-	tar -cvf /home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/deploy/images/wandboard-dual/core-image-wvsnp-minimal-wandboard-dual-20161117204202.rootfs.tar -C /home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs .
+	tar -cvf /home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/deploy/images/wandboard-dual/core-image-wvsnp-minimal-wandboard-dual-20161208080214.rootfs.tar -C /home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/rootfs .
 	cd /home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/deploy/images/wandboard-dual
-	bzip2 -f -k core-image-wvsnp-minimal-wandboard-dual-20161117204202.rootfs.tar
-	rm core-image-wvsnp-minimal-wandboard-dual-20161117204202.rootfs.tar
+	bzip2 -f -k core-image-wvsnp-minimal-wandboard-dual-20161208080214.rootfs.tar
+	rm core-image-wvsnp-minimal-wandboard-dual-20161208080214.rootfs.tar
 }
 
 img_creation_func

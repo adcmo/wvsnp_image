@@ -40,8 +40,8 @@ shutdown:x:70:
 users:x:100:
 nogroup:x:65534:
 rpc:x:999:
-avahi:x:998:
+sshd:x:998:
 ftp:x:997:
-sshd:x:996:
+avahi:x:996:
 netdev:x:995:
 messagebus:x:994:

@@ -35,5 +35,6 @@ CORE_IMAGE_EXTRA_INSTALL += " \
     ffmpeg \
     libxbee \
     libmongoose \
+    wvsnp-dashboard \
 "
-IMAGE_INSTALL_remove = "libav"
+CORE_IMAGE_INSTALL_remove = "libav"

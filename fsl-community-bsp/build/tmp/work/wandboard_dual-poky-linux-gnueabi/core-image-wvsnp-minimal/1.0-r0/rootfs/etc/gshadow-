@@ -40,7 +40,7 @@ shutdown:*::
 users:*::
 nogroup:*::
 rpc:!::
-avahi:!::
-ftp:!::
 sshd:!::
+ftp:!::
+avahi:!::
 netdev:!::

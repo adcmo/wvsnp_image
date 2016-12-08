@@ -394,8 +394,8 @@ gstreamer1.0-plugins-ugly-meta cortexa9hf-vfp-neon
 gstreamer1.0-plugins-ugly-mpeg2dec cortexa9hf-vfp-neon
 gstreamer1.0-plugins-ugly-rmdemux cortexa9hf-vfp-neon
 gstreamer1.0-plugins-ugly-xingmux cortexa9hf-vfp-neon
-hostap-daemon cortexa9hf-vfp-neon
 hostap-utils cortexa9hf-vfp-neon
+hostapd cortexa9hf-vfp-neon
 imx-gpu-viv-tools cortexa9hf-vfp-neon-mx6qdl
 imx-gpu-viv-tools-apitrace cortexa9hf-vfp-neon-mx6qdl
 imx-lib wandboard_dual
@@ -801,5 +801,6 @@ wireless-tools cortexa9hf-vfp-neon
 wpa-supplicant cortexa9hf-vfp-neon
 wpa-supplicant-cli cortexa9hf-vfp-neon
 wpa-supplicant-passphrase cortexa9hf-vfp-neon
+wvsnp-dashboard cortexa9hf-vfp-neon
 wvsnp-startupscripts cortexa9hf-vfp-neon
 xserver-xorg-extension-viv-autohdmi cortexa9hf-vfp-neon-mx6qdl

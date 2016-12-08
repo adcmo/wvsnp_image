@@ -15,7 +15,7 @@ bb_exit_handler() {
 }
 trap 'bb_exit_handler' 0
 set -e
-export ROOTFS_SIZE=413696
+export ROOTFS_SIZE=1454080
 export prefix="/usr"
 export STRIP="arm-poky-linux-gnueabi-strip"
 export USER="carl"
@@ -101,9 +101,9 @@ export LOGNAME="carl"
 export UBOOT_ARCH="arm"
 export base_prefix=""
 export BUILD_STRIP="strip"
-export PACKAGE_INSTALL="wvsnp-startupscripts packagegroup-fsl-gstreamer-full packagegroup-fslc-gstreamer1.0 vsftpd libxbee libmongoose nano packagegroup-core-boot packagegroup-fslc-gstreamer1.0-full libx264-133 btpkg screen packagegroup-fsl-tools-gpu-external packagegroup-fsl-gstreamer bash packagegroup-fsl-tools-gpu run-postinsts ffmpeg openssh packagegroup-core-tools-debug packagegroup-wandboard-ap-test imx-test packagegroup-base-extended"
+export PACKAGE_INSTALL="wvsnp-startupscripts packagegroup-fsl-gstreamer-full packagegroup-fslc-gstreamer1.0 vsftpd libxbee libmongoose nano packagegroup-core-boot packagegroup-fslc-gstreamer1.0-full libx264-133 btpkg screen packagegroup-fsl-tools-gpu-external packagegroup-fsl-gstreamer bash packagegroup-fsl-tools-gpu run-postinsts ffmpeg openssh packagegroup-core-tools-debug packagegroup-wandboard-ap-test imx-test wvsnp-dashboard packagegroup-base-extended"
 img_creation_func() {
-		if [ -z "/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/deploy/images/wandboard-dual/core-image-wvsnp-minimal-wandboard-dual-20161117204202.rootfs.ext3" ]; then
+		if [ -z "/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/deploy/images/wandboard-dual/core-image-wvsnp-minimal-wandboard-dual-20161208080214.rootfs.ext3" ]; then
 		bberror "SDCARD_ROOTFS is undefined. To use sdcard image from Freescale's BSP it needs to be defined."
 		exit 1
 	fi
@@ -114,7 +114,7 @@ img_creation_func() {
 	SDCARD_SIZE=$(expr 4096 + ${BOOT_SPACE_ALIGNED} + $ROOTFS_SIZE + 4096)
 
 	# Initialize a sparse file
-	dd if=/dev/zero of=/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/deploy/images/wandboard-dual/core-image-wvsnp-minimal-wandboard-dual-20161117204202.rootfs.sdcard bs=1 count=0 seek=$(expr 1024 \* ${SDCARD_SIZE})
+	dd if=/dev/zero of=/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/deploy/images/wandboard-dual/core-image-wvsnp-minimal-wandboard-dual-20161208080214.rootfs.sdcard bs=1 count=0 seek=$(expr 1024 \* ${SDCARD_SIZE})
 
 	generate_imx_sdcard
 
@@ -128,10 +128,10 @@ bberror() {
 
 generate_imx_sdcard() {
 	# Create partition table
-	parted -s /home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/deploy/images/wandboard-dual/core-image-wvsnp-minimal-wandboard-dual-20161117204202.rootfs.sdcard mklabel msdos
-	parted -s /home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/deploy/images/wandboard-dual/core-image-wvsnp-minimal-wandboard-dual-20161117204202.rootfs.sdcard unit KiB mkpart primary fat32 4096 $(expr 4096 \+ ${BOOT_SPACE_ALIGNED})
-	parted -s /home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/deploy/images/wandboard-dual/core-image-wvsnp-minimal-wandboard-dual-20161117204202.rootfs.sdcard unit KiB mkpart primary $(expr  4096 \+ ${BOOT_SPACE_ALIGNED}) $(expr 4096 \+ ${BOOT_SPACE_ALIGNED} \+ $ROOTFS_SIZE)
-	parted /home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/deploy/images/wandboard-dual/core-image-wvsnp-minimal-wandboard-dual-20161117204202.rootfs.sdcard print
+	parted -s /home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/deploy/images/wandboard-dual/core-image-wvsnp-minimal-wandboard-dual-20161208080214.rootfs.sdcard mklabel msdos
+	parted -s /home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/deploy/images/wandboard-dual/core-image-wvsnp-minimal-wandboard-dual-20161208080214.rootfs.sdcard unit KiB mkpart primary fat32 4096 $(expr 4096 \+ ${BOOT_SPACE_ALIGNED})
+	parted -s /home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/deploy/images/wandboard-dual/core-image-wvsnp-minimal-wandboard-dual-20161208080214.rootfs.sdcard unit KiB mkpart primary $(expr  4096 \+ ${BOOT_SPACE_ALIGNED}) $(expr 4096 \+ ${BOOT_SPACE_ALIGNED} \+ $ROOTFS_SIZE)
+	parted /home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/deploy/images/wandboard-dual/core-image-wvsnp-minimal-wandboard-dual-20161208080214.rootfs.sdcard print
 
 	# Burn bootloader
 	case "u-boot" in
@@ -141,15 +141,15 @@ generate_imx_sdcard() {
 		;;
 		u-boot)
 		if [ -n "${SPL_BINARY}" ]; then
-			dd if=/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/deploy/images/wandboard-dual/${SPL_BINARY} of=/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/deploy/images/wandboard-dual/core-image-wvsnp-minimal-wandboard-dual-20161117204202.rootfs.sdcard conv=notrunc seek=2 bs=512
-			dd if=/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/deploy/images/wandboard-dual/u-boot-wandboard-dual.imx of=/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/deploy/images/wandboard-dual/core-image-wvsnp-minimal-wandboard-dual-20161117204202.rootfs.sdcard conv=notrunc seek=69 bs=1K
+			dd if=/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/deploy/images/wandboard-dual/${SPL_BINARY} of=/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/deploy/images/wandboard-dual/core-image-wvsnp-minimal-wandboard-dual-20161208080214.rootfs.sdcard conv=notrunc seek=2 bs=512
+			dd if=/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/deploy/images/wandboard-dual/u-boot-wandboard-dual.imx of=/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/deploy/images/wandboard-dual/core-image-wvsnp-minimal-wandboard-dual-20161208080214.rootfs.sdcard conv=notrunc seek=69 bs=1K
 		else
-			dd if=/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/deploy/images/wandboard-dual/u-boot-wandboard-dual.imx of=/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/deploy/images/wandboard-dual/core-image-wvsnp-minimal-wandboard-dual-20161117204202.rootfs.sdcard conv=notrunc seek=2 bs=512
+			dd if=/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/deploy/images/wandboard-dual/u-boot-wandboard-dual.imx of=/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/deploy/images/wandboard-dual/core-image-wvsnp-minimal-wandboard-dual-20161208080214.rootfs.sdcard conv=notrunc seek=2 bs=512
 		fi
 		;;
 		barebox)
-		dd if=/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/deploy/images/wandboard-dual/barebox-wandboard-dual.bin of=/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/deploy/images/wandboard-dual/core-image-wvsnp-minimal-wandboard-dual-20161117204202.rootfs.sdcard conv=notrunc seek=1 skip=1 bs=512
-		dd if=/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/deploy/images/wandboard-dual/bareboxenv-wandboard-dual.bin of=/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/deploy/images/wandboard-dual/core-image-wvsnp-minimal-wandboard-dual-20161117204202.rootfs.sdcard conv=notrunc seek=1 bs=512k
+		dd if=/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/deploy/images/wandboard-dual/barebox-wandboard-dual.bin of=/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/deploy/images/wandboard-dual/core-image-wvsnp-minimal-wandboard-dual-20161208080214.rootfs.sdcard conv=notrunc seek=1 skip=1 bs=512
+		dd if=/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/deploy/images/wandboard-dual/bareboxenv-wandboard-dual.bin of=/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/deploy/images/wandboard-dual/core-image-wvsnp-minimal-wandboard-dual-20161208080214.rootfs.sdcard conv=notrunc seek=1 bs=512k
 		;;
 		"")
 		;;
@@ -160,7 +160,7 @@ generate_imx_sdcard() {
 	esac
 
 	# Create boot partition image
-	BOOT_BLOCKS=$(LC_ALL=C parted -s /home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/deploy/images/wandboard-dual/core-image-wvsnp-minimal-wandboard-dual-20161117204202.rootfs.sdcard unit b print \
+	BOOT_BLOCKS=$(LC_ALL=C parted -s /home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/deploy/images/wandboard-dual/core-image-wvsnp-minimal-wandboard-dual-20161208080214.rootfs.sdcard unit b print \
 	                  | awk '/ 1 / { print substr($4, 1, length($4 -1)) / 1024 }')
 	rm -f /home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/boot.img
 	mkfs.vfat -n "Boot wandboard-dual" -S 512 -F 32 -C /home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/boot.img $BOOT_BLOCKS
@@ -190,8 +190,8 @@ generate_imx_sdcard() {
 	fi
 
 	# Burn Partition
-	dd if=/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/boot.img of=/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/deploy/images/wandboard-dual/core-image-wvsnp-minimal-wandboard-dual-20161117204202.rootfs.sdcard conv=notrunc,fsync seek=1 bs=$(expr 4096 \* 1024)
-	dd if=/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/deploy/images/wandboard-dual/core-image-wvsnp-minimal-wandboard-dual-20161117204202.rootfs.ext3 of=/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/deploy/images/wandboard-dual/core-image-wvsnp-minimal-wandboard-dual-20161117204202.rootfs.sdcard conv=notrunc,fsync seek=1 bs=$(expr ${BOOT_SPACE_ALIGNED} \* 1024 + 4096 \* 1024)
+	dd if=/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/work/wandboard_dual-poky-linux-gnueabi/core-image-wvsnp-minimal/1.0-r0/boot.img of=/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/deploy/images/wandboard-dual/core-image-wvsnp-minimal-wandboard-dual-20161208080214.rootfs.sdcard conv=notrunc,fsync seek=1 bs=$(expr 4096 \* 1024)
+	dd if=/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/deploy/images/wandboard-dual/core-image-wvsnp-minimal-wandboard-dual-20161208080214.rootfs.ext3 of=/home/carl/wvsnp/wvsnp_image/fsl-community-bsp/build/tmp/deploy/images/wandboard-dual/core-image-wvsnp-minimal-wandboard-dual-20161208080214.rootfs.sdcard conv=notrunc,fsync seek=1 bs=$(expr ${BOOT_SPACE_ALIGNED} \* 1024 + 4096 \* 1024)
 
 }
 

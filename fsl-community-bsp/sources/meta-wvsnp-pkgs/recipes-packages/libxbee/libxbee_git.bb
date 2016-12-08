@@ -10,14 +10,9 @@ SRCREV = "76d63381f85fad014a5b858256aa4c9d1905ad98"
 S = "${WORKDIR}/git/"
 
 PR = "r1"
-
 export CROSS_COMPILE="${TARGET_PREFIX}"
 export GCC="${CC} -fPIC"
 export GXX="${CXX} -fPIC"
-
-INHIBIT_PACKAGE_STRIP = "1"
-
-FILES_${PN} += "${libdir}/"
 
 do_configure() {
 
@@ -29,7 +24,12 @@ do_compile() {
 }
 
 do_install () {
-	mkdir -p ${D}/usr/share/man/man3
-	install -m 0755 ${S}/*.h ${D}${includedir}
+	install -d ${D}/usr/share/man/man3
+	install -d ${D}${libdir}
+	install -m 0755 ${S}/xbee.h ${D}${libdir}
 	oe_runmake install SYS_ROOT=${D}
 }
+
+FILES_${PN} += "/usr/share/man/man3/"
+FILES_${PN} += "${libdir}/"
+
