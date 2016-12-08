@@ -1,0 +1,58 @@
+From 76d63381f85fad014a5b858256aa4c9d1905ad98 Mon Sep 17 00:00:00 2001
+From: Attie Grande <attie@attie.co.uk>
+Date: Wed, 3 Dec 2014 22:33:06 +0000
+Subject: [PATCH] bumped to v3.0.11
+
+---
+ HISTORY                                 | 2 +-
+ make/libconfig.mk                       | 2 +-
+ package/gentoo/libxbee-v3-3.0.11.ebuild | 1 +
+ package/libxbee3.spec                   | 2 +-
+ 4 files changed, 4 insertions(+), 3 deletions(-)
+ create mode 120000 package/gentoo/libxbee-v3-3.0.11.ebuild
+
+diff --git a/HISTORY b/HISTORY
+index 25d61d7..93804d1 100644
+--- a/HISTORY
++++ b/HISTORY
+@@ -1,4 +1,4 @@
+-v3.0.11 - in progress
++v3.0.11 - 3 Dec 2014
+ 	* Fixed library dependancies (no further requirement for -lpthread -lrt on your application)
+ 	* Added an RPM build script, and fixed the release_src / release_source build targets
+ 	* Added an ebuild script for Gentoo
+diff --git a/make/libconfig.mk b/make/libconfig.mk
+index 3a4e973..3d7c04e 100644
+--- a/make/libconfig.mk
++++ b/make/libconfig.mk
+@@ -1,6 +1,6 @@
+ LIBMAJ:=               3
+ LIBMIN:=               0
+-LIBREV:=               10
++LIBREV:=               11
+ 
+ LIBFULLREV:=           $(LIBMAJ).$(LIBMIN).$(LIBREV)
+ 
+diff --git a/package/gentoo/libxbee-v3-3.0.11.ebuild b/package/gentoo/libxbee-v3-3.0.11.ebuild
+new file mode 120000
+index 0000000..62e75d5
+--- /dev/null
++++ b/package/gentoo/libxbee-v3-3.0.11.ebuild
+@@ -0,0 +1 @@
++libxbee-v3-3.0.10.ebuild
+\ No newline at end of file
+diff --git a/package/libxbee3.spec b/package/libxbee3.spec
+index 2182a96..62587b9 100644
+--- a/package/libxbee3.spec
++++ b/package/libxbee3.spec
+@@ -1,6 +1,6 @@
+ Name: libxbee
+ Summary: A C/C++ library to aid the use of Digi XBee radios in API mode
+-%define version 3.0.10
++%define version 3.0.11
+ Release: 1
+ Source: libxbee-v%{version}.tgz
+ 
+-- 
+2.7.4
+
